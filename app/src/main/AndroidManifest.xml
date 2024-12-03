@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- targetSDK 32 이하 -->
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" />
+    <!-- targetSDK 33 부터 -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- 알림 권한 설정-->
+
+    <!-- targetSDK 34 이면서 Android OS 14 인 경우 -->
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- API 레벨에 따른 권한 설정-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 진동 권한 설정 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".notify.AppClass"
+        android:allowBackup="true"
+        android:dataExtractionRules="@drawable/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/application_icon"
+        android:label="Brokenmirror Setting test"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/application_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BrokenMirror"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.BrokenMirror">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".first_access"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.service_guide"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.login_main"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.login_find_id"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.join_agreement"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.join_agreement_detail"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.login_find_id_result"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.login_find_id_result_null"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.login_find_pw"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.login_find_pw_result"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.join_member"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.join_member_success"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.friend.friendList"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <!--        <activity-->
+        <!--          android:name=".ui.friend.friend_list"-->
+        <!--      android:configChanges="screenSize|orientation"-->
+        <!--  android:exported="true"-->
+        <!--android:launchMode="singleTask" />-->
+        <!--<activity-->
+        <!--            android:name=".friend_list_search"-->
+        <!--            android:configChanges="screenSize|orientation"-->
+        <!--            android:exported="true"-->
+        <!--            android:launchMode="singleTop" />-->
+        <activity
+            android:name=".ui.setting.user_profile_other"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.userProfile" />
+        <activity
+            android:name=".ui.setting.user_profile_me"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.userProfile" />
+        <activity
+            android:name=".ui.setting.user_profile_me_edit"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.userProfile"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.setting.user_profile_me_change_name"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.setting.setting_main"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.setting_account"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.setting_notice"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.setting_friend"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.setting_app_info"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.setting_account_pw"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.setting_account_phone"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.setting_account_withdrawal"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.setting_account_withdrawal_notice"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.good_bye"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.setting_key"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.setting_key_purchase"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.setting_account_login"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.setting_friend_block"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.chat.chat_main"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.notification.notification_main"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.chat.chat_add"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.chat.chat_room"
+            android:configChanges="screenSize|screenLayout|orientation"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.setting.setting_etc1"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.setting_etc2"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.setting_add_friend"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.customer_service"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.customer_service_terms"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.customer_service_policy"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.customer_service_open"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.announcement"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.customer_service_email_inquiry"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ui.setting.customer_service_error_inquiry"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".androidTest"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:launchMode="singleTop" />
+    </application>
+
+</manifest>

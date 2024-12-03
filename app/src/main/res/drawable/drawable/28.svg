@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" viewBox="0 0 30 40">
+    <g data-name="그룹 28">
+        <path data-name="사각형 70" style="fill:none" d="M0 0h30v40H0z"/>
+        <g data-name="그룹 1">
+            <path data-name="패스 11" d="m1797.446 15.964 11 11.433" transform="translate(-1787.946 -1.681)" style="stroke:#373737;stroke-linecap:round;fill:none"/>
+            <path data-name="패스 12" d="m1808.446 15.964-11 11.433" transform="translate(-1787.946 -1.681)" style="stroke:#373737;stroke-linecap:round;fill:none"/>
+        </g>
+    </g>
+</svg>

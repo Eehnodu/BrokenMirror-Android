@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_dialog">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/find_id_email"
+                android:textColor="@color/text_default_2"
+                android:textSize="17sp"
+                android:fontFamily="@font/notosans_medium_ttf"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/bottom_sheet_email_list_0_btn"/>
+
+            <Button
+                android:id="@+id/bottom_sheet_email_close_btn"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/dialog_close_btn"
+                app:layout_constraintTop_toTopOf="@+id/title"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <Button
+                android:id="@+id/bottom_sheet_email_list_0_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bottomsheet"
+                android:textColor="@color/text_default_2"
+                android:text="@string/find_id_email_list_0"
+                android:layout_marginTop="10dp"
+                android:includeFontPadding="false"
+                android:fontFamily="@font/notosans_medium_ttf"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:outlineProvider="none"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                app:layout_constraintVertical_chainStyle="packed"
+                app:layout_constraintBottom_toTopOf="@+id/bottom_sheet_email_list_1_btn"/>
+
+            <Button
+                android:id="@+id/bottom_sheet_email_list_1_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bottomsheet"
+                android:textColor="@color/text_default_2"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/notosans_medium_ttf"
+                android:includeFontPadding="false"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:outlineProvider="none"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@id/bottom_sheet_email_list_0_btn"
+                app:layout_constraintBottom_toTopOf="@+id/bottom_sheet_email_list_2_btn"/>
+
+            <Button
+                android:id="@+id/bottom_sheet_email_list_2_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bottomsheet"
+                android:textColor="@color/text_default_2"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/notosans_medium_ttf"
+                android:textSize="15sp"
+                android:includeFontPadding="false"
+                android:gravity="center"
+                android:outlineProvider="none"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_email_list_1_btn"
+                app:layout_constraintBottom_toTopOf="@+id/bottom_sheet_email_list_3_btn"/>
+
+            <Button
+                android:id="@+id/bottom_sheet_email_list_3_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bottomsheet"
+                android:textColor="@color/text_default_2"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/notosans_medium_ttf"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:outlineProvider="none"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@id/bottom_sheet_email_list_2_btn"
+                app:layout_constraintBottom_toTopOf="@+id/bottom_sheet_email_list_4_btn"/>
+
+            <Button
+                android:id="@+id/bottom_sheet_email_list_4_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bottomsheet"
+                android:textColor="@color/text_default_2"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/notosans_medium_ttf"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:outlineProvider="none"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_email_list_3_btn"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraint_find_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basic"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="30dp"
+            android:layout_height="46dp"
+            android:background="@drawable/btn_back"
+            app:layout_constraintTop_toTopOf="@id/header"
+            app:layout_constraintBottom_toBottomOf="@id/header"
+            app:layout_constraintStart_toStartOf="@id/header"/>
+
+        <Button
+            android:id="@+id/find_id_close_Button"
+            android:layout_width="30dp"
+            android:layout_height="46dp"
+            android:background="@drawable/btn_close"
+            app:layout_constraintEnd_toEndOf="@+id/header"
+            app:layout_constraintTop_toTopOf="@+id/header"
+            app:layout_constraintBottom_toBottomOf="@+id/header"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/notosans_medium_ttf"
+            android:textSize="18sp"
+            android:textColor="@color/main"
+            android:text="@string/login_find_id"
+            app:layout_constraintStart_toStartOf="@id/header"
+            app:layout_constraintTop_toTopOf="@id/header"
+            app:layout_constraintBottom_toBottomOf="@id/header"
+            app:layout_constraintEnd_toEndOf="@id/header"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintBottom_toTopOf="@+id/find_id_next_button">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="70dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="18dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/find_id_name"
+                    android:textColor="@color/text_default_2"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/notosans_regular_ttf"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <EditText
+                    android:id="@+id/find_id_name_editText"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="8dp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:background="@drawable/login_main_edittext"
+                    android:fontFamily="@font/notosans_regular_ttf"
+                    android:hint="@string/find_id_name_input"
+                    android:textSize="12sp"
+                    android:textColorHint="@color/hint"
+                    android:maxLines="1"
+                    android:includeFontPadding="false"
+                    android:inputType="text"
+                    android:ellipsize="end"
+                    android:privateImeOptions="defaultInputmode=korean"
+                    android:textCursorDrawable="@drawable/edittext_cursor_black"
+                    android:imeOptions="flagNoExtractUi"
+                    app:layout_constraintTop_toBottomOf="@id/name_text"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/find_id_name_btn"/>
+
+                <Button
+                    android:id="@+id/find_id_name_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:background="@drawable/bg_spinner"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="55dp"
+                    android:text="@string/find_id_nationality_domestic"
+                    android:textColor="@color/text_default_2"
+                    android:fontFamily="@font/notosans_regular_ttf"
+                    android:textSize="12sp"
+                    android:includeFontPadding="false"
+                    android:gravity="center_vertical"
+                    android:outlineProvider="none"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@+id/find_id_name_editText"
+                    app:layout_constraintTop_toTopOf="@+id/find_id_name_editText"/>
+
+                <TextView
+                    android:id="@+id/find_id_name_textView_condition"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/find_id_name_condition"
+                    android:textColor="@color/necessary"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/notosans_regular_ttf"
+                    android:gravity="start"
+                    android:visibility="gone"
+                    android:singleLine="true"
+                    app:layout_constraintTop_toBottomOf="@+id/find_id_name_editText"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/find_id_name_editText"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="18dp"
+                app:layout_constraintTop_toBottomOf="@id/name">
+
+                <TextView
+                    android:id="@+id/birth_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/find_id_birth"
+                    android:textColor="@color/text_default_2"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/notosans_regular_ttf"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <EditText
+                    android:id="@+id/find_id_birth_editText"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="8dp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:background="@drawable/login_main_edittext"
+                    android:fontFamily="@font/notosans_regular_ttf"
+                    android:hint="@string/find_id_birth_input"
+                    android:textSize="12sp"
+                    android:textColorHint="@color/hint"
+                    android:maxLines="1"
+                    android:includeFontPadding="false"
+                    android:inputType="number"
+                    android:ellipsize="end"
+                    android:textCursorDrawable="@drawable/edittext_cursor_black"
+                    android:imeOptions="flagNoExtractUi"
+                    app:layout_constraintTop_toBottomOf="@id/birth_text"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/find_id_male_button"/>
+
+                <Button
+                    android:id="@+id/find_id_male_button"
+                    android:layout_width="50dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/login_main_edittext"
+                    android:fontFamily="@font/notosans_regular_ttf"
+                    android:includeFontPadding="false"
+                    android:outlineProvider="none"
+                    android:text="@string/find_id_gender_male"
+                    android:textColor="@color/hint"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/find_id_birth_editText"
+                    app:layout_constraintEnd_toStartOf="@+id/find_id_female_button"
+                    app:layout_constraintTop_toTopOf="@+id/find_id_birth_editText"/>
+
+                <Button
+                    android:id="@+id/find_id_female_button"
+                    android:layout_width="50dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/login_main_edittext"
+                    android:text="@string/find_id_gender_female"
+                    android:textSize="14sp"
+                    android:textColor="@color/hint"
+                    android:outlineProvider="none"
+                    android:fontFamily="@font/notosans_regular_ttf"
+                    android:includeFontPadding="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@+id/find_id_birth_editText"
+                    app:layout_constraintTop_toTopOf="@+id/find_id_birth_editText"/>
+
+                <TextView
+                    android:id="@+id/find_id_birth_textView_condition"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/find_id_birth_condition"
+                    android:textSize="12sp"
+                    android:textColor="@color/necessary"
+                    android:fontFamily="@font/notosans_regular_ttf"
+                    android:gravity="start"
+                    android:visibility="gone"
+                    android:singleLine="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/find_id_birth_editText"
+                    app:layout_constraintEnd_toEndOf="@+id/find_id_birth_editText"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="18dp"
+                app:layout_constraintTop_toBottomOf="@id/birth">
+
+                <TextView
+                    android:id="@+id/phone_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/find_id_phone"
+                    android:textColor="@color/text_default_2"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/notosans_regular_ttf"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <EditText
+                    android:id="@+id/find_id_phone_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:background="@drawable/login_main_edittext"
+                    android:hint="@string/find_id_phone_input"
+                    android:fontFamily="@font/notosans_regular_ttf"
+                    android:textSize="12sp"
+                    android:textColorHint="@color/hint"
+                    android:maxLines="1"
+                    android:includeFontPadding="false"
+                    android:inputType="phone"
+                    android:outlineProvider="none"
+                    android:ellipsize="end"
+                    android:textCursorDrawable="@drawable/edittext_cursor_black"
+                    android:imeOptions="flagNoExtractUi"
+                    app:layout_constraintTop_toBottomOf="@id/phone_text"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/find_id_phone_textView_condition"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/find_id_phone_condition"
+                    android:textSize="12sp"
+                    android:textColor="@color/necessary"
+                    android:fontFamily="@font/notosans_regular_ttf"
+                    android:gravity="start"
+                    android:visibility="gone"
+                    android:singleLine="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/find_id_phone_editText"
+                    app:layout_constraintEnd_toEndOf="@+id/find_id_phone_editText"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/email_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/phone">
+
+                <TextView
+                    android:id="@+id/email_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/find_id_email"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_default_2"
+                    android:fontFamily="@font/notosans_regular_ttf"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <EditText
+                    android:id="@+id/find_id_email_editText"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="8dp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:background="@drawable/login_main_edittext"
+                    android:fontFamily="@font/notosans_regular_ttf"
+                    android:hint="@string/find_id_email_input"
+                    android:includeFontPadding="false"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:outlineProvider="none"
+                    android:textColorHint="@color/hint"
+                    android:textSize="12sp"
+                    android:ellipsize="end"
+                    android:textCursorDrawable="@drawable/edittext_cursor_black"
+                    android:imeOptions="flagNoExtractUi"
+                    app:layout_constraintTop_toBottomOf="@+id/email_text"
+                    app:layout_constraintEnd_toStartOf="@+id/find_id_email_list_btn"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <Button
+                    android:id="@+id/find_id_email_list_btn"
+                    android:layout_width="120dp"
+                    android:layout_height="0dp"
+                    android:paddingStart="12sp"
+                    android:paddingEnd="40dp"
+                    android:background="@drawable/bg_spinner"
+                    android:text="@string/find_id_email_list_0"
+                    android:includeFontPadding="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_default_2"
+                    android:gravity="center_vertical"
+                    android:fontFamily="@font/notosans_regular_ttf"
+                    android:textAllCaps="false"
+                    android:outlineProvider="none"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@+id/find_id_email_editText"
+                    app:layout_constraintTop_toTopOf="@+id/find_id_email_editText"/>
+
+                <TextView
+                    android:id="@+id/find_id_email_textView_condition"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/find_id_email_condition"
+                    android:textColor="@color/necessary"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/notosans_regular_ttf"
+                    android:gravity="start"
+                    android:visibility="gone"
+                    android:singleLine="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/find_id_email_editText"
+                    app:layout_constraintEnd_toEndOf="@+id/find_id_email_editText" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/email_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/email_top">
+
+                <EditText
+                    android:id="@+id/find_id_emailNum_editText"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:background="@drawable/login_main_edittext"
+                    android:hint="@string/find_id_email_check_input"
+                    android:fontFamily="@font/notosans_regular_ttf"
+                    android:textSize="12sp"
+                    android:textColorHint="@color/hint"
+                    android:maxLines="1"
+                    android:includeFontPadding="false"
+                    android:inputType="number"
+                    android:outlineProvider="none"
+                    android:layout_marginEnd="8dp"
+                    android:ellipsize="end"
+                    android:textCursorDrawable="@drawable/edittext_cursor_black"
+                    android:imeOptions="flagNoExtractUi"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/find_id_emailNum_btn"/>
+
+                <Button
+                    android:id="@+id/find_id_emailNum_btn"
+                    android:layout_width="120dp"
+                    android:layout_height="0dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:background="@drawable/login_main_loginbtn"
+                    android:fontFamily="@font/notosans_regular_ttf"
+                    android:text="@string/find_id_email_check_request"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/main"
+                    android:textSize="14sp"
+                    android:outlineProvider="none"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/find_id_emailNum_editText"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/find_id_next_button"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/login_main_loginbtn"
+        android:fontFamily="@font/notosans_regular_ttf"
+        android:textColor="@color/main"
+        android:textSize="18sp"
+        android:text="@string/find_id_next"
+        android:layout_gravity="bottom"
+        android:includeFontPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

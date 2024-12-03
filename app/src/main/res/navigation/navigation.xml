@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/login_main">
+    <activity
+        android:id="@+id/login_main"
+        android:name="com.example.brokenmirror.ui.setting.login_main"
+        android:label="login_main"/>
+    <action
+        android:id="@+id/login_main_to_login_find_id"/>
+
+    <activity
+        android:id="@+id/login_find_id"
+        android:name="com.example.brokenmirror.ui.setting.login_find_id"
+        android:label="login_find_id" />
+</navigation>

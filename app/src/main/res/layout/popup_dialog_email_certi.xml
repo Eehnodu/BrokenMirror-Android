@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:maxWidth="500dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxWidth="460dp"
+        android:paddingTop="30dp"
+        android:background="@drawable/bg_popup"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:id="@+id/text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/email_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="150dp"
+                android:paddingStart="1dp"
+                android:paddingEnd="1dp"
+                android:includeFontPadding="false"
+                android:fontFamily="@font/notosans_bold_ttf"
+                android:text="@string/test_email"
+                android:textSize="14sp"
+                android:textColor="@color/main"
+                android:background="@color/service_guide"
+                android:singleLine="true"/>
+
+            <TextView
+                android:id="@+id/popup_dialog_block_cancel_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:includeFontPadding="false"
+                android:fontFamily="@font/notosans_regular_ttf"
+                android:textColor="@color/id_result"
+                android:textSize="14sp"
+                android:text="@string/popup_at"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/text_layout_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/text_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/send_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxWidth="440dp"
+                android:paddingBottom="15dp"
+                android:includeFontPadding="false"
+                android:gravity="center"
+                android:text="@string/popup_email_send"
+                android:textSize="14sp"
+                android:textColor="@color/id_result"
+                android:fontFamily="@font/notosans_regular_ttf"/>
+
+            <TextView
+                android:id="@+id/do_not"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxWidth="440dp"
+                android:paddingBottom="28dp"
+                android:includeFontPadding="false"
+                android:gravity="center"
+                android:text="@string/popup_do_not"
+                android:textColor="@color/id_result"
+                android:textSize="14sp"
+                android:fontFamily="@font/notosans_regular_ttf"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/confirm_button"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:background="@drawable/btn_popup_dialog_one_main"
+            android:textColor="@color/white"
+            android:text="@string/find_id_result_null_confirm"
+            android:textSize="16sp"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/notosans_regular_ttf"
+            android:outlineProvider="none"
+            app:layout_constraintTop_toBottomOf="@id/text_layout_0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

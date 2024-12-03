@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/friend_layout_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basic"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/friend_search_button"
+            android:layout_width="27dp"
+            android:layout_height="40dp"
+            android:background="@drawable/icon_search"
+            app:layout_constraintEnd_toEndOf="@+id/header"
+            app:layout_constraintTop_toTopOf="@+id/header"
+            app:layout_constraintBottom_toBottomOf="@+id/header"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/notosans_medium_ttf"
+            android:textSize="18sp"
+            android:textColor="@color/main"
+            android:text="@string/friend_list"
+            app:layout_constraintStart_toStartOf="@id/header"
+            app:layout_constraintTop_toTopOf="@id/header"
+            app:layout_constraintBottom_toBottomOf="@id/header"
+            app:layout_constraintEnd_toEndOf="@id/header"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintBottom_toTopOf="@+id/navigation">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <HorizontalScrollView
+                android:id="@+id/remaining_key_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/ver_friend_layout"
+                android:fillViewport="true"
+                android:scrollbars="none">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:background="@color/key_notice"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/text_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notosans_medium_ttf"
+                        android:includeFontPadding="false"
+                        android:text="@string/friend_remain_key"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_default_2"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/text_1"/>
+
+                    <TextView
+                        android:id="@+id/text_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(13) : "
+                        android:includeFontPadding="false"
+                        android:fontFamily="@font/notosans_medium_ttf"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_default_2"
+                        app:layout_constraintStart_toEndOf="@+id/text_0"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/text_2"/>
+
+                    <TextView
+                        android:id="@+id/text_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/friend_free"
+                        android:includeFontPadding="false"
+                        android:fontFamily="@font/notosans_medium_ttf"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_default_2"
+                        app:layout_constraintStart_toEndOf="@+id/text_1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/text_3"/>
+
+                    <TextView
+                        android:id="@+id/text_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 5"
+                        android:textColor="@color/key_free"
+                        android:includeFontPadding="false"
+                        android:fontFamily="@font/notosans_medium_ttf"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/text_2"
+                        app:layout_constraintTop_toTopOf="@+id/parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/text_4"/>
+
+                    <TextView
+                        android:id="@+id/text_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/friend_unit"
+                        android:textColor="@color/key_free"
+                        android:includeFontPadding="false"
+                        android:fontFamily="@font/notosans_medium_ttf"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/text_3"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/text_5"/>
+
+                    <TextView
+                        android:id="@+id/text_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" / "
+                        android:includeFontPadding="false"
+                        android:fontFamily="@font/notosans_medium_ttf"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_default_2"
+                        app:layout_constraintStart_toEndOf="@+id/text_4"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/text_6"/>
+
+                    <TextView
+                        android:id="@+id/text_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/friend_not_free"
+                        android:includeFontPadding="false"
+                        android:fontFamily="@font/notosans_medium_ttf"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_default_2"
+                        app:layout_constraintStart_toEndOf="@+id/text_5"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/text_7"/>
+
+                    <TextView
+                        android:id="@+id/text_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 8"
+                        android:textColor="@color/necessary"
+                        android:includeFontPadding="false"
+                        android:fontFamily="@font/notosans_medium_ttf"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/text_6"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/text_8"/>
+
+                    <TextView
+                        android:id="@+id/text_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/friend_unit"
+                        android:textColor="@color/necessary"
+                        android:includeFontPadding="false"
+                        android:fontFamily="@font/notosans_medium_ttf"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/text_7"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </HorizontalScrollView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ver_friend_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/remaining_key_scroll">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/ver_friend_division"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="4dp"
+                    android:background="@drawable/bg_friend_division"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/ver_division_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="10dp"
+                        android:text="@string/friend_verified"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/notosans_regular_ttf"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/text_default_2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/ver_division_num_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notosans_regular_ttf"
+                        android:textColor="@color/c7c7c7"
+                        android:textSize="12.5sp"
+                        android:includeFontPadding="false"
+                        app:layout_constraintStart_toEndOf="@+id/ver_division_textView"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/ver_division_count_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/friend_list_person"
+                        android:fontFamily="@font/notosans_regular_ttf"
+                        android:textColor="@color/c7c7c7"
+                        android:textSize="12.5sp"
+                        android:includeFontPadding="false"
+                        app:layout_constraintStart_toEndOf="@id/ver_division_num_textView"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                    <View
+                        android:id="@+id/friend_ver_fold_view"
+                        android:layout_width="34dp"
+                        android:layout_height="23dp"
+                        android:background="@drawable/btn_up_arrow"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/ver_friend_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"
+                    app:layout_constraintTop_toBottomOf="@+id/ver_friend_division"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/friend_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/ver_friend_layout">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/friend_division"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="4dp"
+                    android:background="@drawable/bg_friend_division"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/division_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="10dp"
+                        android:text="@string/friend_list"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/notosans_regular_ttf"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/text_default_2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/division_num_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notosans_regular_ttf"
+                        android:textColor="@color/c7c7c7"
+                        android:textSize="12.5sp"
+                        android:includeFontPadding="false"
+                        app:layout_constraintStart_toEndOf="@+id/division_textView"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/division_count_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/friend_list_person"
+                        android:fontFamily="@font/notosans_regular_ttf"
+                        android:textColor="@color/c7c7c7"
+                        android:textSize="12.5sp"
+                        android:includeFontPadding="false"
+                        app:layout_constraintStart_toEndOf="@id/division_num_textView"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                    <View
+                        android:id="@+id/friend_fold_view"
+                        android:layout_width="34dp"
+                        android:layout_height="23dp"
+                        android:background="@drawable/btn_up_arrow"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/friend_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"
+                    android:scrollbars="vertical"
+                    app:layout_constraintTop_toBottomOf="@+id/friend_division"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!--Bottom Navigation Bar-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <include layout="@layout/bottom_navigation"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/index_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintBottom_toTopOf="@+id/navigation">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/friend_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:background="@drawable/bg_sectionindexer"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/friend_index_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:paddingTop="1dp"
+                android:fontFamily="@font/notosans_regular_ttf"
+                android:includeFontPadding="false"
+                android:text="@string/friend_section_0"
+                android:textColor="@color/c7c7c7"
+                android:textSize="13sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/friend_index_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:fontFamily="@font/notosans_regular_ttf"
+                android:includeFontPadding="false"
+                android:text="@string/friend_section_1"
+                android:textColor="@color/c7c7c7"
+                android:textSize="13sp"
+                app:layout_constraintTop_toBottomOf="@+id/friend_index_0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/friend_index_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:fontFamily="@font/notosans_regular_ttf"
+                android:includeFontPadding="false"
+                android:text="@string/friend_section_2"
+                android:textColor="@color/c7c7c7"
+                android:textSize="13sp"
+                app:layout_constraintTop_toBottomOf="@+id/friend_index_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/friend_index_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:fontFamily="@font/notosans_regular_ttf"
+                android:includeFontPadding="false"
+                android:text="@string/friend_section_3"
+                android:textColor="@color/c7c7c7"
+                android:textSize="13sp"
+                app:layout_constraintTop_toBottomOf="@+id/friend_index_2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/friend_index_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:fontFamily="@font/notosans_regular_ttf"
+                android:includeFontPadding="false"
+                android:text="@string/friend_section_4"
+                android:textColor="@color/c7c7c7"
+                android:textSize="13sp"
+                app:layout_constraintTop_toBottomOf="@+id/friend_index_3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/friend_index_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:fontFamily="@font/notosans_regular_ttf"
+                android:includeFontPadding="false"
+                android:text="@string/friend_section_5"
+                android:textColor="@color/c7c7c7"
+                android:textSize="13sp"
+                app:layout_constraintTop_toBottomOf="@+id/friend_index_4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/friend_index_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:fontFamily="@font/notosans_regular_ttf"
+                android:includeFontPadding="false"
+                android:text="@string/friend_section_6"
+                android:textColor="@color/c7c7c7"
+                android:textSize="13sp"
+                app:layout_constraintTop_toBottomOf="@+id/friend_index_5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/friend_index_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:fontFamily="@font/notosans_regular_ttf"
+                android:includeFontPadding="false"
+                android:text="@string/friend_section_7"
+                android:textColor="@color/c7c7c7"
+                android:textSize="13sp"
+                app:layout_constraintTop_toBottomOf="@+id/friend_index_6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/friend_index_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:fontFamily="@font/notosans_regular_ttf"
+                android:includeFontPadding="false"
+                android:text="@string/friend_section_8"
+                android:textColor="@color/c7c7c7"
+                android:textSize="13sp"
+                app:layout_constraintTop_toBottomOf="@+id/friend_index_7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/friend_index_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:fontFamily="@font/notosans_regular_ttf"
+                android:includeFontPadding="false"
+                android:text="@string/friend_section_9"
+                android:textColor="@color/c7c7c7"
+                android:textSize="13sp"
+                app:layout_constraintTop_toBottomOf="@+id/friend_index_8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/friend_index_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:fontFamily="@font/notosans_regular_ttf"
+                android:includeFontPadding="false"
+                android:text="@string/friend_section_10"
+                android:textColor="@color/c7c7c7"
+                android:textSize="13sp"
+                app:layout_constraintTop_toBottomOf="@+id/friend_index_9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/friend_index_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:fontFamily="@font/notosans_regular_ttf"
+                android:includeFontPadding="false"
+                android:text="@string/friend_section_11"
+                android:textColor="@color/c7c7c7"
+                android:textSize="13sp"
+                app:layout_constraintTop_toBottomOf="@+id/friend_index_10"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/friend_index_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:fontFamily="@font/notosans_regular_ttf"
+                android:includeFontPadding="false"
+                android:text="@string/friend_section_12"
+                android:textColor="@color/c7c7c7"
+                android:textSize="13sp"
+                app:layout_constraintTop_toBottomOf="@+id/friend_index_11"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/friend_index_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:fontFamily="@font/notosans_regular_ttf"
+                android:includeFontPadding="false"
+                android:text="@string/friend_section_13"
+                android:textColor="@color/c7c7c7"
+                android:textSize="13sp"
+                app:layout_constraintTop_toBottomOf="@+id/friend_index_12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/friend_index_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:fontFamily="@font/notosans_regular_ttf"
+                android:includeFontPadding="false"
+                android:text="@string/friend_section_14"
+                android:textColor="@color/c7c7c7"
+                android:textSize="11sp"
+                app:layout_constraintTop_toBottomOf="@+id/friend_index_13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/friend_index_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:fontFamily="@font/notosans_regular_ttf"
+                android:includeFontPadding="false"
+                android:text="@string/friend_section_15"
+                android:textColor="@color/c7c7c7"
+                android:textSize="11sp"
+                app:layout_constraintTop_toBottomOf="@+id/friend_index_14"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/friend_index_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:fontFamily="@font/notosans_regular_ttf"
+                android:includeFontPadding="false"
+                android:text="@string/friend_section_16"
+                android:textColor="@color/c7c7c7"
+                android:textSize="11sp"
+                app:layout_constraintTop_toBottomOf="@+id/friend_index_15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/friend_index_17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:fontFamily="@font/notosans_regular_ttf"
+                android:includeFontPadding="false"
+                android:text="@string/friend_section_17"
+                android:textColor="@color/c7c7c7"
+                android:textSize="11sp"
+                app:layout_constraintTop_toBottomOf="@+id/friend_index_16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/friend_index_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:fontFamily="@font/notosans_regular_ttf"
+                android:includeFontPadding="false"
+                android:text="@string/friend_section_18"
+                android:textColor="@color/c7c7c7"
+                android:textSize="11sp"
+                app:layout_constraintTop_toBottomOf="@+id/friend_index_17"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/friend_land_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:background="@drawable/bg_sectionindexer"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/friend_index_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:fontFamily="@font/notosans_regular_ttf"
+                android:includeFontPadding="false"
+                android:text="@string/friend_section_0"
+                android:textColor="@color/c7c7c7"
+                android:textSize="13sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/friend_index_21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:fontFamily="@font/notosans_regular_ttf"
+                android:includeFontPadding="false"
+                android:text="@string/friend_section_2"
+                android:textColor="@color/c7c7c7"
+                android:textSize="13sp"
+                app:layout_constraintTop_toBottomOf="@+id/friend_index_20"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/friend_index_22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:fontFamily="@font/notosans_regular_ttf"
+                android:includeFontPadding="false"
+                android:text="@string/friend_section_4"
+                android:textColor="@color/c7c7c7"
+                android:textSize="13sp"
+                app:layout_constraintTop_toBottomOf="@+id/friend_index_21"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/friend_index_23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:fontFamily="@font/notosans_regular_ttf"
+                android:includeFontPadding="false"
+                android:text="@string/friend_section_6"
+                android:textColor="@color/c7c7c7"
+                android:textSize="13sp"
+                app:layout_constraintTop_toBottomOf="@+id/friend_index_22"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/friend_index_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:fontFamily="@font/notosans_regular_ttf"
+                android:includeFontPadding="false"
+                android:text="@string/friend_section_8"
+                android:textColor="@color/c7c7c7"
+                android:textSize="13sp"
+                app:layout_constraintTop_toBottomOf="@+id/friend_index_23"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/friend_index_25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:fontFamily="@font/notosans_regular_ttf"
+                android:includeFontPadding="false"
+                android:text="@string/friend_section_10"
+                android:textColor="@color/c7c7c7"
+                android:textSize="13sp"
+                app:layout_constraintTop_toBottomOf="@+id/friend_index_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/friend_index_26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                android:fontFamily="@font/notosans_regular_ttf"
+                android:includeFontPadding="false"
+                android:text="@string/friend_section_12"
+                android:textColor="@color/c7c7c7"
+                android:textSize="13sp"
+                app:layout_constraintTop_toBottomOf="@+id/friend_index_25"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/friend_index_27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:fontFamily="@font/notosans_regular_ttf"
+                android:includeFontPadding="false"
+                android:text="@string/friend_section_14"
+                android:textColor="@color/c7c7c7"
+                android:textSize="13sp"
+                app:layout_constraintTop_toBottomOf="@+id/friend_index_26"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/friend_indexer_guid_textView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_sectionindexer_guidance"
+        android:fontFamily="@font/notosans_medium_ttf"
+        android:textSize="50sp"
+        android:includeFontPadding="false"
+        android:textColor="@color/c7c7c7"
+        android:visibility="gone"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

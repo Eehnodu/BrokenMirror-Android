@@ -1,0 +1,672 @@
+<resources>
+    <string name="app_name">BrokenMirror</string>
+    <string name="app_name_1.1.0">BrokenMirror_1.1.0</string>
+    <string name="app_name_ui_test_2">BrokenMirror (UI TEST 2차)</string>
+    <string name="app_name_ui_test_3">BrokenMirror (UI TEST 3차)</string>
+
+    <!-- BackgroundTask exit -->
+    <string name="app_exit">\'뒤로\' 버튼을 한 번 더 누르시면 종료됩니다.</string>
+
+    <!-- Splash -->
+    <string name="splash_intro">Interactive Security Key Service</string>
+
+    <!-- first Access -->
+    <string name="first_access_title">앱이 처음이시군요</string>
+    <string name="first_access_desc">BrokenMirror의 원활한 이용을 위하여 서비스에 필요한 필수 접근 권한을 허용해주세요.</string>
+    <string name="first_access_per_title_0">기기 및 앱 기록</string>
+    <string name="first_access_per_desc_0">앱 상태 확인 및 기기 식별</string>
+    <string name="first_access_per_title_1">저장공간</string>
+    <string name="first_access_per_desc_1">이미지 및 보안 파일 저장</string>
+    <string name="first_access_per_title_2">주소록</string>
+    <string name="first_access_per_desc_2">친구목록 추가 및 갱신</string>
+    <string name="first_access_per_title_3">사진·미디어·파일</string>
+    <string name="first_access_per_desc_3">사진 또는 미디어 파일 읽기</string>
+    <string name="first_access_per_title_4">Wi-Fi 연결 정보</string>
+    <string name="first_access_per_desc_4">네트워크 연결 확인</string>
+    <string name="first_access_per_title_5">그 외</string>
+    <string name="first_access_per_desc_5">필요 시 추가 예정</string>
+
+    <!-- Service Guide -->
+    <string name="service_guide_title">이용안내</string>
+    <string name="service_guide_desc_0">상호보안 키를 이용한</string>
+    <string name="service_guide_desc_1">상호보안 서비스</string>
+    <string name="service_guide_desc_2">BrokenMirror에서는 본인이 선택한</string>
+    <string name="service_guide_desc_3">이미지로 암호화 된 키를 생성하고</string>
+    <string name="service_guide_desc_4">친구와 공유할 수 있습니다.</string>
+    <string name="service_guide_desc_5">최초 가입 시</string>
+    <string name="service_guide_desc_6">상호보안 키 무료</string>
+    <string name="service_guide_desc_7">BrokenMirror를 처음</string>
+    <string name="service_guide_desc_8">경험하시는 고객님께 즉시 사용 가능한</string>
+    <string name="service_guide_desc_9">키 10개</string>
+    <string name="service_guide_desc_10">를 제공드립니다.</string>
+    <string name="service_guide_desc_11">*무료 키 유효기간 : <b>30</b>일</string>
+    <string name="service_guide_desc_12">일</string>
+    <string name="service_guide_desc_13">우리를 위한</string>
+    <string name="service_guide_desc_14">특별한 상호보안 키</string>
+    <string name="service_guide_desc_15">소중한 정보를 안전하게 관리하는</string>
+    <string name="service_guide_desc_16">한 차원 높은 보안 관리법</string>
+    <string name="service_guide_desc_17">BrokenMirror에서 경험해 보세요.</string>
+
+    <!-- Main Login -->
+    <string name="login_edittext_id">아이디를 입력해주세요</string>
+    <string name="login_edittext_pw">비밀번호를 입력해주세요</string>
+    <string name="login_auto_login">자동 로그인</string>
+    <string name="login_button">로그인</string>
+    <string name="login_find_id">아이디찾기</string>
+    <string name="login_find_pw">비밀번호찾기</string>
+    <string name="login_find_pw_modi">비밀번호 재설정</string>
+    <string name="login_signup">회원가입</string>
+    <string name="login_info_incorrect">로그인 정보가 일치하지 않습니다</string>
+
+    <!-- Find ID -->
+    <string name="find_id_name">이름</string>
+    <string name="find_id_name_input">이름을 입력해주세요</string>
+    <string name="find_id_nationality">국적</string>
+    <string name="find_id_nationality_domestic">내국인</string>
+    <string name="find_id_nationality_foreign">외국인</string>
+    <string name="find_id_birth">생년월일</string>
+    <string name="find_id_birth_input">생년월일(YYYYMMDD)</string>
+    <string name="find_id_gender_male">남</string>
+    <string name="find_id_gender_female">여</string>
+    <string name="find_id_phone">휴대폰 번호</string>
+    <string name="find_id_phone_input">휴대폰 번호를 입력해주세요</string>
+    <string name="find_id_email">이메일</string>
+    <string name="find_id_email_input">이메일을 입력해주세요</string>
+    <string name="find_id_email_list_0">직접입력</string>
+    <string name="find_id_email_list_1">naver.com</string>
+    <string name="find_id_email_list_2">gmail.com</string>
+    <string name="find_id_email_list_3">daum.net</string>
+    <string name="find_id_email_list_4">nate.com</string>
+    <string name="find_id_email_check_input">이메일 인증 번호</string>
+    <string name="find_id_email_check_request">인증번호 발송</string>
+    <string name="find_id_email_re_request">재발송</string>
+    <string name="find_id_next">다음</string>
+    <string name="find_id_name_condition">한글로 입력해주세요</string>
+    <string name="find_id_birth_condition">생년월일 8자리를 입력해주세요</string>
+    <string name="find_id_phone_condition">\'-\' 없이 11자리를 입력해주세요</string>
+    <string name="find_id_email_condition">옳은 이메일 형식이 아닙니다</string>
+
+    <!-- Join Agreement -->
+    <string name="join_agree">약관동의</string>
+    <string name="join_agree_description">BrokenMirror가 제공하는 아래 서비스를\n계속 이용하시려면 약관에 동의가 필요합니다.</string>
+    <string name="join_agree_necessary">(필수)</string>
+    <string name="join_agree_unnecessary">(선택)</string>
+    <string name="join_agree_agreement_0">서비스 이용약관 동의</string>
+    <string name="join_agree_agreement_1">개인정보 수집 및 이용 동의</string>
+    <string name="join_agree_agreement_2">고유식별정보 처리 동의</string>
+    <string name="join_agree_agreement_3">개인정보처리방침</string>
+    <string name="join_agree_agreement_4">알림 수신 동의</string>
+    <string name="join_agree_agreement_all">모두 확인 및 동의합니다.</string>
+    <string name="join_agree_next">동의 후 계속</string>
+    <string name="join_agree_essential">필수 약관에 동의하지 않았습니다.</string>
+    <string name="join_agree_setting_title">알림 수신 불가 안내</string>
+    <string name="join_agree_setting_message">알림을 허용하지 않을 경우 Brokenmirror에서 발생한 알림을 정상적으로 확인하실 수 없습니다. 기기 알림 설정 허용은 기기의 앱알림(Brokenmirror) 설정에서 변경하실 수 있습니다.</string>
+    <string name="join_agree_setting_positive">설정</string>
+    <string name="join_agree_setting_negative">닫기</string>
+
+    <!-- Join Agreement Detail -->
+    <string name="join_agree_det_usage_agreement">이용약관</string>
+    <string name="join_agree_det_agree_btn">동의합니다</string>
+    <string name="join_agree_det_context_0">
+        타이아(주)는 BrokenMirror 서비스 관련하여 아래와 같이 개인정보를 수집 및 이용합니다.
+        타이아(주)에서 수집한 개인정보는 정보통신망 이용촉진 및 정보보호 등에 관한 법률,
+        개인정보보호법 등 관계 법령에 따라 안전하게 관리됩니다.\n\n
+        [제 0 장] 총 칙\n
+        제 1 조 (목적)\n
+        본 약관은 NICE평가정보(주)(이하 "회사"라 한다)가 제공하는 NICE아이디 서비스(이하 "서비스"라 한다)의 이용 조건 및 절차를 포함한 제반 사항을 규정함을 목적으로 합니다.\n
+        제 2 조 (용어의 정의)\n
+        본 약관에서 사용하는 용어의 정의는 다음과 같습니다.\n
+        1. 서비스: 구현되는 단말기(PC, 휴대폰 등의 각종 유무선 장치를 포함)와 상관 없이 “이용자”가 본인 또는 본인의 정보 일부를 식별하여 그 결과값을 “서비스 이용사”에게 전달하는 NICE 아이디 제반 서비스를 말합니다.\n
+        2. 이용자: 본 약관에 정한 바에 따라서 "회사"가 제공하는 “서비스”를 이용하는 고객을 말합니다.\n
+        3. 서비스 이용사: "회사"와 “서비스” 이용계약을 체결하여 “서비스”를 이용하는 회사를 의미합니다.\n
+        4. 개인정보: 이용자의 성명, 주민등록번호(외국인의 경우 외국인 등록번호), 주소, 연락처, 이메일 주소 등 특정 정보 주체를 식별할 수 있는 정보를 뜻합니다.\n
+        5. 서비스 이용 기록: “이용자”가 “서비스”를 이용한 기록 이력을 의미합니다.\n
+        제 3 조 (약관의 효력 발생 및 개정)\n
+        1. 본 약관은 그 내용을 "서비스"의 화면에 게시하거나 기타의 방법으로 이용자에게 공지함으로써 즉시 그 효력이 발생합니다.\n
+        2. "회사"는 “약관의 규제에 관한 법률”, “정보통신망 이용 촉진 및 정보보호 등에 관한 법률” 등 관련 법령에 위배되지 않는 범위 내에서 본 약관을 개정할 수 있습니다.
+        [제 2 장] 총 칙\n
+        제 1 조 (목적)\n
+        본 약관은 NICE평가정보(주)(이하 "회사"라 한다)가 제공하는 NICE아이디 서비스(이하 "서비스"라 한다)의 이용 조건 및 절차를 포함한 제반 사항을 규정함을 목적으로 합니다.\n
+        제 2 조 (용어의 정의)\n
+        본 약관에서 사용하는 용어의 정의는 다음과 같습니다.\n
+        1. 서비스: 구현되는 단말기(PC, 휴대폰 등의 각종 유무선 장치를 포함)와 상관 없이 “이용자”가 본인 또는 본인의 정보 일부를 식별하여 그 결과값을 “서비스 이용사”에게 전달하는 NICE 아이디 제반 서비스를 말합니다.\n
+        2. 이용자: 본 약관에 정한 바에 따라서 "회사"가 제공하는 “서비스”를 이용하는 고객을 말합니다.\n
+        3. 서비스 이용사: "회사"와 “서비스” 이용계약을 체결하여 “서비스”를 이용하는 회사를 의미합니다.\n
+        4. 개인정보: 이용자의 성명, 주민등록번호(외국인의 경우 외국인 등록번호), 주소, 연락처, 이메일 주소 등 특정 정보 주체를 식별할 수 있는 정보를 뜻합니다.\n
+        5. 서비스 이용 기록: “이용자”가 “서비스”를 이용한 기록 이력을 의미합니다.\n
+        제 3 조 (약관의 효력 발생 및 개정)\n
+        1. 본 약관은 그 내용을 "서비스"의 화면에 게시하거나 기타의 방법으로 이용자에게 공지함으로써 즉시 그 효력이 발생합니다.\n
+        2. "회사"는 “약관의 규제에 관한 법률”, “정보통신망 이용 촉진 및 정보보호 등에 관한 법률” 등 관련 법령에 위배되지 않는 범위 내에서 본 약관을 개정할 수 있습니다.</string>
+    <string name="join_agree_det_context_1">
+        타이아(주)는 BrokenMirror 서비스 관련하여 아래와 같이 개인정보를 수집 및 이용합니다.
+        타이아(주)에서 수집한 개인정보는 정보통신망 이용촉진 및 정보보호 등에 관한 법률,
+        개인정보보호법 등 관계 법령에 따라 안전하게 관리됩니다.\n\n
+        [제 1 장] 총 칙\n
+        제 1 조 (목적)\n
+        본 약관은 NICE평가정보(주)(이하 "회사"라 한다)가 제공하는 NICE아이디 서비스(이하 "서비스"라 한다)의 이용 조건 및 절차를 포함한 제반 사항을 규정함을 목적으로 합니다.\n
+        제 2 조 (용어의 정의)\n
+        본 약관에서 사용하는 용어의 정의는 다음과 같습니다.\n
+        1. 서비스: 구현되는 단말기(PC, 휴대폰 등의 각종 유무선 장치를 포함)와 상관 없이 “이용자”가 본인 또는 본인의 정보 일부를 식별하여 그 결과값을 “서비스 이용사”에게 전달하는 NICE 아이디 제반 서비스를 말합니다.\n
+        2. 이용자: 본 약관에 정한 바에 따라서 "회사"가 제공하는 “서비스”를 이용하는 고객을 말합니다.\n
+        3. 서비스 이용사: "회사"와 “서비스” 이용계약을 체결하여 “서비스”를 이용하는 회사를 의미합니다.\n
+        4. 개인정보: 이용자의 성명, 주민등록번호(외국인의 경우 외국인 등록번호), 주소, 연락처, 이메일 주소 등 특정 정보 주체를 식별할 수 있는 정보를 뜻합니다.\n
+        5. 서비스 이용 기록: “이용자”가 “서비스”를 이용한 기록 이력을 의미합니다.\n
+        제 3 조 (약관의 효력 발생 및 개정)\n
+        1. 본 약관은 그 내용을 "서비스"의 화면에 게시하거나 기타의 방법으로 이용자에게 공지함으로써 즉시 그 효력이 발생합니다.\n
+        2. "회사"는 “약관의 규제에 관한 법률”, “정보통신망 이용 촉진 및 정보보호 등에 관한 법률” 등 관련 법령에 위배되지 않는 범위 내에서 본 약관을 개정할 수 있습니다.
+        [제 2 장] 총 칙\n
+        제 1 조 (목적)\n
+        본 약관은 NICE평가정보(주)(이하 "회사"라 한다)가 제공하는 NICE아이디 서비스(이하 "서비스"라 한다)의 이용 조건 및 절차를 포함한 제반 사항을 규정함을 목적으로 합니다.\n
+        제 2 조 (용어의 정의)\n
+        본 약관에서 사용하는 용어의 정의는 다음과 같습니다.\n
+        1. 서비스: 구현되는 단말기(PC, 휴대폰 등의 각종 유무선 장치를 포함)와 상관 없이 “이용자”가 본인 또는 본인의 정보 일부를 식별하여 그 결과값을 “서비스 이용사”에게 전달하는 NICE 아이디 제반 서비스를 말합니다.\n
+        2. 이용자: 본 약관에 정한 바에 따라서 "회사"가 제공하는 “서비스”를 이용하는 고객을 말합니다.\n
+        3. 서비스 이용사: "회사"와 “서비스” 이용계약을 체결하여 “서비스”를 이용하는 회사를 의미합니다.\n
+        4. 개인정보: 이용자의 성명, 주민등록번호(외국인의 경우 외국인 등록번호), 주소, 연락처, 이메일 주소 등 특정 정보 주체를 식별할 수 있는 정보를 뜻합니다.\n
+        5. 서비스 이용 기록: “이용자”가 “서비스”를 이용한 기록 이력을 의미합니다.\n
+        제 3 조 (약관의 효력 발생 및 개정)\n
+        1. 본 약관은 그 내용을 "서비스"의 화면에 게시하거나 기타의 방법으로 이용자에게 공지함으로써 즉시 그 효력이 발생합니다.\n
+        2. "회사"는 “약관의 규제에 관한 법률”, “정보통신망 이용 촉진 및 정보보호 등에 관한 법률” 등 관련 법령에 위배되지 않는 범위 내에서 본 약관을 개정할 수 있습니다.</string>
+    <string name="join_agree_det_context_2">
+        타이아(주)는 BrokenMirror 서비스 관련하여 아래와 같이 개인정보를 수집 및 이용합니다.
+        타이아(주)에서 수집한 개인정보는 정보통신망 이용촉진 및 정보보호 등에 관한 법률,
+        개인정보보호법 등 관계 법령에 따라 안전하게 관리됩니다.\n\n
+        [제 2 장] 총 칙\n
+        제 1 조 (목적)\n
+        본 약관은 NICE평가정보(주)(이하 "회사"라 한다)가 제공하는 NICE아이디 서비스(이하 "서비스"라 한다)의 이용 조건 및 절차를 포함한 제반 사항을 규정함을 목적으로 합니다.\n
+        제 2 조 (용어의 정의)\n
+        본 약관에서 사용하는 용어의 정의는 다음과 같습니다.\n
+        1. 서비스: 구현되는 단말기(PC, 휴대폰 등의 각종 유무선 장치를 포함)와 상관 없이 “이용자”가 본인 또는 본인의 정보 일부를 식별하여 그 결과값을 “서비스 이용사”에게 전달하는 NICE 아이디 제반 서비스를 말합니다.\n
+        2. 이용자: 본 약관에 정한 바에 따라서 "회사"가 제공하는 “서비스”를 이용하는 고객을 말합니다.\n
+        3. 서비스 이용사: "회사"와 “서비스” 이용계약을 체결하여 “서비스”를 이용하는 회사를 의미합니다.\n
+        4. 개인정보: 이용자의 성명, 주민등록번호(외국인의 경우 외국인 등록번호), 주소, 연락처, 이메일 주소 등 특정 정보 주체를 식별할 수 있는 정보를 뜻합니다.\n
+        5. 서비스 이용 기록: “이용자”가 “서비스”를 이용한 기록 이력을 의미합니다.\n
+        제 3 조 (약관의 효력 발생 및 개정)\n
+        1. 본 약관은 그 내용을 "서비스"의 화면에 게시하거나 기타의 방법으로 이용자에게 공지함으로써 즉시 그 효력이 발생합니다.\n
+        2. "회사"는 “약관의 규제에 관한 법률”, “정보통신망 이용 촉진 및 정보보호 등에 관한 법률” 등 관련 법령에 위배되지 않는 범위 내에서 본 약관을 개정할 수 있습니다.
+        [제 2 장] 총 칙\n
+        제 1 조 (목적)\n
+        본 약관은 NICE평가정보(주)(이하 "회사"라 한다)가 제공하는 NICE아이디 서비스(이하 "서비스"라 한다)의 이용 조건 및 절차를 포함한 제반 사항을 규정함을 목적으로 합니다.\n
+        제 2 조 (용어의 정의)\n
+        본 약관에서 사용하는 용어의 정의는 다음과 같습니다.\n
+        1. 서비스: 구현되는 단말기(PC, 휴대폰 등의 각종 유무선 장치를 포함)와 상관 없이 “이용자”가 본인 또는 본인의 정보 일부를 식별하여 그 결과값을 “서비스 이용사”에게 전달하는 NICE 아이디 제반 서비스를 말합니다.\n
+        2. 이용자: 본 약관에 정한 바에 따라서 "회사"가 제공하는 “서비스”를 이용하는 고객을 말합니다.\n
+        3. 서비스 이용사: "회사"와 “서비스” 이용계약을 체결하여 “서비스”를 이용하는 회사를 의미합니다.\n
+        4. 개인정보: 이용자의 성명, 주민등록번호(외국인의 경우 외국인 등록번호), 주소, 연락처, 이메일 주소 등 특정 정보 주체를 식별할 수 있는 정보를 뜻합니다.\n
+        5. 서비스 이용 기록: “이용자”가 “서비스”를 이용한 기록 이력을 의미합니다.\n
+        제 3 조 (약관의 효력 발생 및 개정)\n
+        1. 본 약관은 그 내용을 "서비스"의 화면에 게시하거나 기타의 방법으로 이용자에게 공지함으로써 즉시 그 효력이 발생합니다.\n
+        2. "회사"는 “약관의 규제에 관한 법률”, “정보통신망 이용 촉진 및 정보보호 등에 관한 법률” 등 관련 법령에 위배되지 않는 범위 내에서 본 약관을 개정할 수 있습니다.</string>
+    <string name="join_agree_det_context_3">
+        타이아(주)는 BrokenMirror 서비스 관련하여 아래와 같이 개인정보를 수집 및 이용합니다.
+        타이아(주)에서 수집한 개인정보는 정보통신망 이용촉진 및 정보보호 등에 관한 법률,
+        개인정보보호법 등 관계 법령에 따라 안전하게 관리됩니다.\n\n
+        [제 3 장] 총 칙\n
+        제 1 조 (목적)\n
+        본 약관은 NICE평가정보(주)(이하 "회사"라 한다)가 제공하는 NICE아이디 서비스(이하 "서비스"라 한다)의 이용 조건 및 절차를 포함한 제반 사항을 규정함을 목적으로 합니다.\n
+        제 2 조 (용어의 정의)\n
+        본 약관에서 사용하는 용어의 정의는 다음과 같습니다.\n
+        1. 서비스: 구현되는 단말기(PC, 휴대폰 등의 각종 유무선 장치를 포함)와 상관 없이 “이용자”가 본인 또는 본인의 정보 일부를 식별하여 그 결과값을 “서비스 이용사”에게 전달하는 NICE 아이디 제반 서비스를 말합니다.\n
+        2. 이용자: 본 약관에 정한 바에 따라서 "회사"가 제공하는 “서비스”를 이용하는 고객을 말합니다.\n
+        3. 서비스 이용사: "회사"와 “서비스” 이용계약을 체결하여 “서비스”를 이용하는 회사를 의미합니다.\n
+        4. 개인정보: 이용자의 성명, 주민등록번호(외국인의 경우 외국인 등록번호), 주소, 연락처, 이메일 주소 등 특정 정보 주체를 식별할 수 있는 정보를 뜻합니다.\n
+        5. 서비스 이용 기록: “이용자”가 “서비스”를 이용한 기록 이력을 의미합니다.\n
+        제 3 조 (약관의 효력 발생 및 개정)\n
+        1. 본 약관은 그 내용을 "서비스"의 화면에 게시하거나 기타의 방법으로 이용자에게 공지함으로써 즉시 그 효력이 발생합니다.\n
+        2. "회사"는 “약관의 규제에 관한 법률”, “정보통신망 이용 촉진 및 정보보호 등에 관한 법률” 등 관련 법령에 위배되지 않는 범위 내에서 본 약관을 개정할 수 있습니다.
+        [제 2 장] 총 칙\n
+        제 1 조 (목적)\n
+        본 약관은 NICE평가정보(주)(이하 "회사"라 한다)가 제공하는 NICE아이디 서비스(이하 "서비스"라 한다)의 이용 조건 및 절차를 포함한 제반 사항을 규정함을 목적으로 합니다.\n
+        제 2 조 (용어의 정의)\n
+        본 약관에서 사용하는 용어의 정의는 다음과 같습니다.\n
+        1. 서비스: 구현되는 단말기(PC, 휴대폰 등의 각종 유무선 장치를 포함)와 상관 없이 “이용자”가 본인 또는 본인의 정보 일부를 식별하여 그 결과값을 “서비스 이용사”에게 전달하는 NICE 아이디 제반 서비스를 말합니다.\n
+        2. 이용자: 본 약관에 정한 바에 따라서 "회사"가 제공하는 “서비스”를 이용하는 고객을 말합니다.\n
+        3. 서비스 이용사: "회사"와 “서비스” 이용계약을 체결하여 “서비스”를 이용하는 회사를 의미합니다.\n
+        4. 개인정보: 이용자의 성명, 주민등록번호(외국인의 경우 외국인 등록번호), 주소, 연락처, 이메일 주소 등 특정 정보 주체를 식별할 수 있는 정보를 뜻합니다.\n
+        5. 서비스 이용 기록: “이용자”가 “서비스”를 이용한 기록 이력을 의미합니다.\n
+        제 3 조 (약관의 효력 발생 및 개정)\n
+        1. 본 약관은 그 내용을 "서비스"의 화면에 게시하거나 기타의 방법으로 이용자에게 공지함으로써 즉시 그 효력이 발생합니다.\n
+        2. "회사"는 “약관의 규제에 관한 법률”, “정보통신망 이용 촉진 및 정보보호 등에 관한 법률” 등 관련 법령에 위배되지 않는 범위 내에서 본 약관을 개정할 수 있습니다.</string>
+    <string name="join_agree_det_context_4">
+        타이아(주)는 BrokenMirror 서비스 관련하여 아래와 같이 개인정보를 수집 및 이용합니다.
+        타이아(주)에서 수집한 개인정보는 정보통신망 이용촉진 및 정보보호 등에 관한 법률,
+        개인정보보호법 등 관계 법령에 따라 안전하게 관리됩니다.\n\n
+        [제 4 장] 총 칙\n
+        제 1 조 (목적)\n
+        본 약관은 NICE평가정보(주)(이하 "회사"라 한다)가 제공하는 NICE아이디 서비스(이하 "서비스"라 한다)의 이용 조건 및 절차를 포함한 제반 사항을 규정함을 목적으로 합니다.\n
+        제 2 조 (용어의 정의)\n
+        본 약관에서 사용하는 용어의 정의는 다음과 같습니다.\n
+        1. 서비스: 구현되는 단말기(PC, 휴대폰 등의 각종 유무선 장치를 포함)와 상관 없이 “이용자”가 본인 또는 본인의 정보 일부를 식별하여 그 결과값을 “서비스 이용사”에게 전달하는 NICE 아이디 제반 서비스를 말합니다.\n
+        2. 이용자: 본 약관에 정한 바에 따라서 "회사"가 제공하는 “서비스”를 이용하는 고객을 말합니다.\n
+        3. 서비스 이용사: "회사"와 “서비스” 이용계약을 체결하여 “서비스”를 이용하는 회사를 의미합니다.\n
+        4. 개인정보: 이용자의 성명, 주민등록번호(외국인의 경우 외국인 등록번호), 주소, 연락처, 이메일 주소 등 특정 정보 주체를 식별할 수 있는 정보를 뜻합니다.\n
+        5. 서비스 이용 기록: “이용자”가 “서비스”를 이용한 기록 이력을 의미합니다.\n
+        제 3 조 (약관의 효력 발생 및 개정)\n
+        1. 본 약관은 그 내용을 "서비스"의 화면에 게시하거나 기타의 방법으로 이용자에게 공지함으로써 즉시 그 효력이 발생합니다.\n
+        2. "회사"는 “약관의 규제에 관한 법률”, “정보통신망 이용 촉진 및 정보보호 등에 관한 법률” 등 관련 법령에 위배되지 않는 범위 내에서 본 약관을 개정할 수 있습니다.
+        [제 2 장] 총 칙\n
+        제 1 조 (목적)\n
+        본 약관은 NICE평가정보(주)(이하 "회사"라 한다)가 제공하는 NICE아이디 서비스(이하 "서비스"라 한다)의 이용 조건 및 절차를 포함한 제반 사항을 규정함을 목적으로 합니다.\n
+        제 2 조 (용어의 정의)\n
+        본 약관에서 사용하는 용어의 정의는 다음과 같습니다.\n
+        1. 서비스: 구현되는 단말기(PC, 휴대폰 등의 각종 유무선 장치를 포함)와 상관 없이 “이용자”가 본인 또는 본인의 정보 일부를 식별하여 그 결과값을 “서비스 이용사”에게 전달하는 NICE 아이디 제반 서비스를 말합니다.\n
+        2. 이용자: 본 약관에 정한 바에 따라서 "회사"가 제공하는 “서비스”를 이용하는 고객을 말합니다.\n
+        3. 서비스 이용사: "회사"와 “서비스” 이용계약을 체결하여 “서비스”를 이용하는 회사를 의미합니다.\n
+        4. 개인정보: 이용자의 성명, 주민등록번호(외국인의 경우 외국인 등록번호), 주소, 연락처, 이메일 주소 등 특정 정보 주체를 식별할 수 있는 정보를 뜻합니다.\n
+        5. 서비스 이용 기록: “이용자”가 “서비스”를 이용한 기록 이력을 의미합니다.\n
+        제 3 조 (약관의 효력 발생 및 개정)\n
+        1. 본 약관은 그 내용을 "서비스"의 화면에 게시하거나 기타의 방법으로 이용자에게 공지함으로써 즉시 그 효력이 발생합니다.\n
+        2. "회사"는 “약관의 규제에 관한 법률”, “정보통신망 이용 촉진 및 정보보호 등에 관한 법률” 등 관련 법령에 위배되지 않는 범위 내에서 본 약관을 개정할 수 있습니다.</string>
+
+    <!-- Find ID Result -->
+    <string name="find_id_result_true">회원님의 정보와 일치하는 아이디입니다.</string>
+    <string name="find_id_result_flase">회원님의 정보와 일치하는 아이디가 없습니다.(임시)</string>
+    <string name="find_id_result_id">아이디 :</string>
+    <string name="find_id_result_date">가입일 :</string>
+    <string name="find_id_result_reset_pw">비밀번호 찾기</string>
+    <string name="find_id_result_null">회원님의 정보로 가입된 결과가 없습니다.</string>
+    <string name="find_id_result_null_confirm">확인</string>
+
+    <!-- Find PW -->
+    <string name="find_pw_id">아이디</string>
+    <string name="find_pw_id_condition">올바른 아이디 형식이 아닙니다</string>
+    <string name="find_pw_data_input_warning">정보를 전부 입력해주세요</string>
+    <string name="find_pw_id_warning">아이디를 올바르게 입력해주세요</string>
+    <string name="find_pw_name_warning">이름을 올바르게 입력해주세요</string>
+    <string name="find_pw_birth_warning">생년월일을 올바르게 입력해주세요</string>
+    <string name="find_pw_gender_warning">성별을 선택해주세요</string>
+    <string name="find_pw_phone_warning">휴대폰 번호를 올바르게 입력해주세요</string>
+    <string name="find_pw_email_warning">이메일을 올바르게 입력해주세요</string>
+    <string name="find_pw_email_num_warning">이메일 인증번호를 올바르게 입력해주세요</string>
+
+    <!-- Find PW Result -->
+    <string name="find_pw_result_tem_pw">회원님의 아이디에 등록된 이메일로 임시 비밀번호가\n발송되었습니다.</string>
+
+    <!-- Join Member -->
+    <string name="join_member_pw">비밀번호</string>
+    <string name="join_member_pw_input">영문 + 숫자 + 특수 문자를 8자리 이상 입력해주세요</string>
+    <string name="join_member_pw_check">비밀번호확인</string>
+    <string name="join_member_pw_check_input">비밀번호를 다시 입력해주세요</string>
+    <string name="join_member_pw_incorrect">비밀번호가 일치하지 않습니다</string>
+    <string name="join_member_pw_num">휴대폰 인증 번호</string>
+    <string name="join_member_pw_warning">비밀번호를 입력해주세요</string>
+    <string name="join_member_pw_num_warning">입력한 비밀번호와 동일하게 입력해주세요</string>
+    <string name="join_member_phone_num_warning">휴대폰 인증번호를 입력해주세요</string>
+
+    <!-- Join Member Success -->
+    <string name="join_member_success">회원가입 완료</string>
+    <string name="join_member_success_notice0">님, 환영합니다.</string>
+    <string name="join_member_success_notice1"> (으)로</string>
+    <string name="join_member_success_notice2">BrokenMirror 회원가입이 완료되었습니다.</string>
+    <string name="join_member_success_start">서비스 시작</string>
+    <string name="join_member_success_please">서비스 시작 버튼을 눌러주세요</string>
+
+    <!-- Friend List -->
+    <string name="friend_list">친구</string>
+    <string name="friend_list_person">명</string>
+    <string name="friend_list_search">친구검색</string>
+    <string name="friend_list_chat">대화</string>
+    <string name="friend_list_notice">알림</string>
+    <string name="friend_list_setting">설정</string>
+    <string name="friend_section_0">ㄱ</string>
+    <string name="friend_section_1">ㄴ</string>
+    <string name="friend_section_2">ㄷ</string>
+    <string name="friend_section_3">ㄹ</string>
+    <string name="friend_section_4">ㅁ</string>
+    <string name="friend_section_5">ㅂ</string>
+    <string name="friend_section_6">ㅅ</string>
+    <string name="friend_section_7">ㅇ</string>
+    <string name="friend_section_8">ㅈ</string>
+    <string name="friend_section_9">ㅊ</string>
+    <string name="friend_section_10">ㅋ</string>
+    <string name="friend_section_11">ㅌ</string>
+    <string name="friend_section_12">ㅍ</string>
+    <string name="friend_section_13">ㅎ</string>
+    <string name="friend_section_14">A</string>
+    <string name="friend_section_15">H</string>
+    <string name="friend_section_16">O</string>
+    <string name="friend_section_17">V</string>
+    <string name="friend_section_18">Z</string>
+    <string name="friend_section_19">1</string>
+    <string name="friend_section_20">#</string>
+    <string name="friend_remain_key">잔여 키</string>
+    <string name="friend_free">무료</string>
+    <string name="friend_not_free">유료</string>
+    <string name="friend_unit">개</string>
+    <string name="friend_verified">인증된 친구</string>
+
+    <!-- Friend List Search -->
+    <string name="friend_search_init">이름 또는 전화번호를 입력해주세요</string>
+    <string name="friend_search_no_result">검색 결과가 없습니다.</string>
+
+    <!-- User Profile -->
+    <string name="user_profile_edit">프로필 사진 변경</string>
+    <string name="user_profile_block">차단</string>
+    <string name="user_profile_sir">님을</string>
+    <string name="user_profile_popup">차단 하시겠습니까?</string>
+    <string name="user_profile_other_blocked">차단 해제</string>
+    <string name="user_profile_popup_unblock">차단해제 하시겠습니까?</string>
+    <string name="join_agree_setting_media_title">사진 및 동영상 설정 안내</string>
+    <string name="join_agree_setting_media_message">사진 및 동영상을 허용하지 않을 경우 Brokenmirror에서 사진 및 동영상을 정상적으로 이용하실 수 없습니다. 사진 및 동영상 설정 허용은 기기의 앱알림(Brokenmirror) 설정에서 변경하실 수 있습니다.</string>
+
+
+    <!-- Setting Main -->
+    <string name="setting_main_add_friend">친구추가</string>
+    <string name="setting_main_key_manage">키 관리</string>
+    <string name="setting_main_service_center">고객센터</string>
+    <string name="setting_main_notice">공지사항</string>
+    <string name="setting_main_account">계정</string>
+    <string name="setting_main_friend_manage">친구관리</string>
+    <string name="setting_main_app_info">앱 정보</string>
+    <string name="setting_main_etc">그 외</string>
+    <string name="setting_main_edit_profile">프로필 편집</string>
+    <string name="setting_main_preparing">서비스 준비 중</string>
+
+    <!-- Setting Account -->
+    <string name="setting_account_user_info">회원정보</string>
+    <string name="setting_account_join_date">가입일</string>
+    <string name="setting_account_login_timestamp">로그인 내역</string>
+    <string name="setting_account_membership_withdrawal">회원탈퇴</string>
+    <string name="setting_account_change_pw">비밀번호 변경</string>
+    <string name="setting_account_logout">로그아웃</string>
+    <string name="setting_account_change_phone_num">휴대폰 번호 변경</string>
+
+    <!-- Setting Notice -->
+    <string name="setting_notice_desc">서비스 이용(충전, 결제, 알림 등)과\n관련된 알림을 보내드립니다.</string>
+    <string name="setting_notice_sound">소리</string>
+    <string name="setting_notice_vib">진동</string>
+    <string name="setting_notice_silent">무음</string>
+    <string name="setting_notice_channel_1">채널1</string>
+    <string name="setting_notice_channel_2">채널2</string>
+    <string name="setting_notice_channel_3">채널3</string>
+    <string name="setting_notice_channel_4">채널4</string>
+
+    <!-- Setting Friend -->
+    <string name="setting_manage_friend_blocked">차단친구</string>
+    <string name="setting_manage_friend_update">친구 목록 새로고침</string>
+    <string name="setting_manage_friend_sync">연락처 동기화</string>
+
+    <!-- Setting App Info -->
+    <string name="setting_app_info_ver">버전</string>
+    <string name="setting_app_info_inquiry">문의 및 지원 정보</string>
+    <string name="setting_app_info_etc">추후 필요 시 추가</string>
+    <string name="setting_app_info_etc_desc">이하 공백</string>
+
+    <!-- Setting Account PW -->
+    <string name="setting_account_pw_title">현재 비밀번호를 입력해주세요</string>
+    <string name="setting_account_pw_question">혹시 비밀번호를 잊으셨나요? ></string>
+    <string name="setting_account_pw_current">현재 비밀번호</string>
+    <string name="setting_account_pw_new">신규 비밀번호</string>
+    <string name="setting_account_pw_new_hint">8자리 이상 영문 + 숫자 + 특수문자</string>
+    <string name="setting_account_pw_new_confirm">신규 비밀번호 확인</string>
+    <string name="setting_account_pw_new_confirm_hint">신규 비밀번호를 다시 입력해주세요</string>
+    <string name="setting_account_pw_next">다음에 변경하기</string>
+    <string name="setting_account_pw_change">비밀번호 변경하기</string>
+    <string name="setting_account_pw_new_hint_notice">8자리 이상 영문 + 숫자 + 특수문자를 입력해주세요</string>
+    <string name="setting_account_pw_same">현재 비밀번호와 동일합니다</string>
+    <string name="setting_account_pw_notice_0">현재 비밀번호가 올바르지 않습니다</string>
+    <string name="setting_account_pw_notice_1">신규 비밀번호가 올바르지 않습니다</string>
+    <string name="setting_account_pw_notice_2">신규 비밀번호와 동일하게 입력하세요</string>
+    <string name="setting_account_pw_popup">신규 비밀번호로 변경이 완료되었습니다.</string>
+
+    <!-- Setting Account Phone -->
+    <string name="setting_account_phone_subtitle">새로운 휴대폰 번호를 입력해주세요</string>
+    <string name="setting_account_phone_new">새로운 휴대폰 번호</string>
+    <string name="setting_account_phone_incorrect">인증번호가 일치하지 않습니다</string>
+    <string name="setting_account_phone_same">현재 휴대폰 번호와 동일합니다</string>
+    <string name="setting_account_phone_next">휴대폰 번호 변경하기</string>
+    <string name="setting_account_phone_auth_num">인증번호</string>
+    <string name="setting_account_phone_warning_0">새로운 번호를 올바르게 입력해주세요</string>
+    <string name="setting_account_phone_warning_1">인증번호를 올바르게 입력해주세요</string>
+    <string name="setting_account_phone_popup">신규 휴대폰 번호로 \n변경이 완료되었습니다.</string>
+
+    <!-- Setting Account Withdrawal -->
+    <string name="setting_account_withdrawal_popup">현재 비밀번호 확인이 완료되었습니다.</string>
+
+    <!-- Setting Account Withdrawal Notice -->
+    <string name="setting_account_withdrawal_notice_title">BrokenMirror 탈퇴 전 안내사항을 확인하세요</string>
+    <string name="setting_account_withdrawal_notice_subtitle">탈퇴하시면 이용 중인 계정이 삭제되며,\n15일 이후 모든 데이터는 복구가 불가능합니다.</string>
+    <string name="setting_account_withdrawal_notice_list_0">회원탈퇴 시 일정 개수 미만의 잔여 키에 대한 환불은 불가능합니다.</string>
+    <string name="setting_account_withdrawal_notice_list_1">회원탈퇴 신청 후 15일간 로그인 하지 않을 경우, 계정이 자동으로 삭제됩니다. 계정을 유지하시려면 15일 이내에 로그인 하십시오.</string>
+    <string name="setting_account_withdrawal_notice_list_2">회원탈퇴 시 계정에 저장된 모든 데이터가 영구적으로 삭제되며, 복구가 불가능 합니다.</string>
+    <string name="setting_account_withdrawal_notice_list_3">회원탈퇴 후에는 서비스 이용이 중지되며, 관련 기능과 혜택을 이용할 수 없습니다.</string>
+    <string name="setting_account_withdrawal_notice_list_4">회원탈퇴 후에는 일정 기간 재가입이 제한될 수 있습니다.</string>
+    <string name="setting_account_withdrawal_notice_popup_title">정말 탈퇴 하시겠습니까?</string>
+    <string name="setting_account_withdrawal_notice_popup_subtitle">탈퇴 버튼 선택 시 15일 후 계정은 삭제되며,\n복구되지 않습니다. 유예기간 내 로그인 시\n탈퇴 요청이 철회됩니다.</string>
+    <string name="setting_account_withdrawal_notice_popup_cancel">취소</string>
+    <string name="setting_account_withdrawal_notice_notice">탈퇴 전 안내사항을 전부 확인해주세요</string>
+
+    <!-- Good Bye -->
+    <string name="good_bye_title">회원탈퇴 완료</string>
+    <string name="good_bye_subtitle">BrokenMirror 회원 탈퇴가 완료되었습니다.\n저희 서비스를 이용해주셔서 감사합니다.</string>
+
+    <!-- Setting Key -->
+    <string name="setting_key_subtitle">보유 중인 키 개수</string>
+    <string name="setting_key_issued">키 발급하기</string>
+    <string name="setting_key_remain">남은 키 개수</string>
+    <string name="setting_key_use_not_free">사용한 유료 키 개수</string>
+    <string name="setting_key_use_free">사용한 무료 키 개수</string>
+    <string name="setting_key_recent">최근 유료 키 생성일</string>
+    <string name="setting_key_list">키 사용 내역</string>
+    <string name="setting_key_date">일시</string>
+    <string name="setting_key_user">교환 상대</string>
+    <string name="setting_key_device">기기</string>
+    <string name="setting_key_purchase">구매하기</string>
+
+    <!-- Setting Key Purchase -->
+    <string name="setting_key_purchase_title">키발급</string>
+    <string name="setting_key_purchase_3300">₩ 3,300</string>
+    <string name="setting_key_purchase_5500">₩ 5,500</string>
+    <string name="setting_key_purchase_add_20">키 20개 추가</string>
+    <string name="setting_key_purchase_add_40">키 40개 추가</string>
+    <string name="setting_key_purchase_secure_key">보안키</string>
+    <string name="setting_key_purchase_complete">구매가 완료되었습니다.</string>
+    <string name="setting_key_purchase_confirm">구매 하시겠습니까?</string>
+    <string name="setting_key_purchase_20">20</string>
+    <string name="setting_key_purchase_40">40</string>
+    <string name="setting_key_purchase_add">추가</string>
+    <string name="setting_key_purchase_block">구매하려는 상품을 선택하세요</string>
+
+    <!-- Setting Account Login -->
+    <string name="setting_account_login_subTitle">로그인 기록은 최근 30일 까지의 기록을\n최대 50건까지 제공됩니다</string>
+    <string name="setting_account_login_ip">IP</string>
+
+    <!-- Chat Main -->
+    <string name="chat_main_title">대화내역</string>
+    <string name="chat_main_no_history">우측 상단의 \'+\' 버튼을 눌러\n새로운 대화를 시작해보세요</string>
+
+    <!-- Chat Add -->
+    <string name="chat_add_selected">선택완료</string>
+    <string name="chat_add_no_friend">친구가 없습니다</string>
+    <string name="chat_add_title">대화상대</string>
+    <string name="chat_add_current_service">현재 1:1 대화 기능만 제공됩니다</string>
+    <string name="chat_add_no_choice">대화할 상대를 선택하세요</string>
+    <string name="chat_add_result">검색결과</string>
+
+    <!-- Chat Room -->
+    <string name="chat_room_notice">암호화 이미지를 보내려면 키 인증이 필요합니다.\n좌측하단의 \'+\' 버튼을 눌러 키 발급을 해주세요.\n((이 곳을 클릭하면, 테스트 화면이 출력됩니다))</string>
+    <string name="message_bottom_protected_img">암호화 이미지</string>
+    <string name="message_bottom_img">일반 이미지</string>
+    <string name="message_bottom_file">파일 전송</string>
+    <string name="message_bottom_key">키 발급</string>
+    <string name="message_notice">알림 메세지</string>
+    <string name="message_notice_context_0">키 교환 요청 중</string>
+    <string name="message_notice_context_1">(상대 승낙 시, 키 1개 소모)</string>
+    <string name="message_notice_context_2">키 교환 요청을 받았습니다.\n승낙 하시겠습니까?</string>
+    <string name="message_notice_context_3">(승낙 시, 키 1개 소모)</string>
+    <string name="message_popup_receiver">님에게</string>
+    <string name="message_popup_request">키 발급을 요청 하시겠습니까?</string>
+    <string name="message_keyCerti_green">인증 완료</string>
+    <string name="message_keyCerti_yellow">키 교환 요청중</string>
+    <string name="message_keyCerti_red">키 인증 만료</string>
+    <string name="message_key_send">보안키를 전송하였습니다.️</string>
+    <string name="message_key_receive">보안키를 수신하였습니다.</string>
+    <string name="message_img_send">암호화 된 이미지를 전송하였습니다.️</string>
+    <string name="message_img_receive">암호화 된 이미지를 수신하였습니다.</string>
+    <string name="message_expired">키 인증이 만료되었습니다.</string>
+    <string name="message_other_key_complete_1">수신인증 완료</string>
+    <string name="message_other_key_complete_2">보안키를 수신받았습니다.</string>
+
+
+    <!-- Notification Main -->
+    <string name="noti_submenu_all">전체</string>
+    <string name="noti_submenu_img">사진전송</string>
+    <string name="noti_submenu_add_friend">친구추가</string>
+    <string name="noti_submenu_buy_key">키 구매</string>
+    <string name="noti_submenu_notice">공지사항</string>
+
+    <string name="noti_submenu_img_title">[사진전송]\u00A0</string>
+    <string name="noti_submenu_img_message">\u00A0님이 사진을 전송했습니다.</string>
+
+    <string name="noti_submenu_add_friend_title">[친구추가]\u00A0</string>
+    <string name="noti_submenu_add_friend_message">\u00A0님이 새 친구로 추가되었습니다.</string>
+
+    <string name="noti_submenu_buy_key_title">[키 구매] 키\u00A0</string>
+    <string name="noti_submenu_buy_key_message">개를 구매하였습니다.</string>
+
+    <string name="noti_submenu_notice_title">[공지사항]\u00A0</string>
+    <string name="noti_submenu_notice_test1">v2.0 업데이트</string>
+    <string name="noti_submenu_notice_test2">2024년 BrokenMirror 전체 보안점검</string>
+    <string name="noti_submenu_notice_test3">구매 가능 키 갯수 변경</string>
+    <string name="noti_submenu_notice_test4">결제 방법 추가</string>
+
+    <!--user_profile_me_change_name-->
+    <string name="user_profile_me_change_name">대화명 변경</string>
+    <string name="count_name">0/20</string>
+
+    <!-- ImageView Description -->
+    <string name="description_user_profile">프로필 사진</string>
+
+    <!-- Network Error -->
+    <string name="network_error">네트워크 상태를 확인해주세요</string>
+    <string name="network_error_message">인터넷 연결에 실패하였습니다.\n와이파이, 데이터 연결 상태를\n확인해주시기 바랍니다.</string>
+
+    <!-- Information Load Fail -->
+    <string name="load_fail">앱 종료 후 재접속 해주세요 </string>
+    <string name="load_fail_message">예기치 못한 문제로 앱 정보를\n불러오는 데 실패하였습니다.</string>
+
+    <!-- setting_add_friend -->
+    <string name="setting_add_friend">친구 추가</string>
+    <string name="setting_add_friend_phone_number">전화번호</string>
+    <string name="setting_add_friend_name">친구 이름</string>
+    <string name="setting_add_friend_noHyphen">-없이 숫자만 입력해주세요</string>
+    <string name="no_blank">빈칸은 이름으로 설정할 수 없습니다.\n다시 입력해주세요.</string>
+
+    <!-- customer_service  -->
+    <string name="customer_service_title">문의하실 내용이 있으신가요?\n고객센터는 여러분의 질문에 답변해드립니다.</string>
+    <string name="customer_service_time">운영시간 : 10:00 ~ 16:00 (평일)</string>
+    <string name="customer_service_email_inquiry">이메일 문의</string>
+    <string name="customer_service_error_inquiry">오류 문의</string>
+    <string name="customer_service_webpage">홈페이지</string>
+    <string name="customer_service_termsPolicy">약관 및 정책</string>
+    <string name="customer_service_terms_service">서비스 이용약관</string>
+    <string name="customer_service_opensource">오픈소스 라이선스</string>
+    <string name="customer_service_company_info">타이아㈜\n대표 : 이성미\n주소 : 광주광역시 신창로 127 (신창타워), 7F (테크놀로지 센터)\n서울특별시 강남구 봉은사로 610, 5F 505호 (비즈니스 센터)\n사업자등록번호 : 410-86-17847\n통신판매번호 : (통신판매업 추후 기입)</string>
+    <string name="customer_service_terms_context">BrokenMirror 이용약관\n\n
+        타이아(주)는 BrokenMirror 서비스 관련하여 아래와 같이 개인정보를 수집 및 이용합니다.\n
+        제 1조 (목적)\n타이아(주)에서 수집한 개인정보는 정보통신망 이용촉진 및 정보보호 등에 관한 법률,\n개인정보보호법 등 관계 법령에 따라 안전하게 관리됩니다.\n\n
+        제 2조 (목적)\n타이아(주)에서 수집한 개인정보는 정보통신망 이용촉진 및 정보보호 등에 관한 법률,\n개인정보보호법 등 관계 법령에 따라 안전하게 관리됩니다.\n\n
+        제 3조 (목적)\n타이아(주)에서 수집한 개인정보는 정보통신망 이용촉진 및 정보보호 등에 관한 법률,\n개인정보보호법 등 관계 법령에 따라 안전하게 관리됩니다.\n\n
+        제 4조 (목적)\n타이아(주)에서 수집한 개인정보는 정보통신망 이용촉진 및 정보보호 등에 관한 법률,\n개인정보보호법 등 관계 법령에 따라 안전하게 관리됩니다.\n\n
+        제 5조 (목적)\n타이아(주)에서 수집한 개인정보는 정보통신망 이용촉진 및 정보보호 등에 관한 법률,\n개인정보보호법 등 관계 법령에 따라 안전하게 관리됩니다.\n\n
+        제 6조 (목적)\n타이아(주)에서 수집한 개인정보는 정보통신망 이용촉진 및 정보보호 등에 관한 법률,\n개인정보보호법 등 관계 법령에 따라 안전하게 관리됩니다.\n\n
+        제 7조 (목적)\n타이아(주)에서 수집한 개인정보는 정보통신망 이용촉진 및 정보보호 등에 관한 법률,\n개인정보보호법 등 관계 법령에 따라 안전하게 관리됩니다.\n\n
+        제 8조 (목적)</string>
+    <string name="customer_service_terms_policy">BrokenMirror 개인정보처리방침\n\n
+        타이아(주)는 BrokenMirror 서비스 관련하여 아래와 같이 개인정보를 수집 및 이용합니다.\n
+        제 1조 (목적)\n타이아(주)에서 수집한 개인정보는 정보통신망 이용촉진 및 정보보호 등에 관한 법률,\n개인정보보호법 등 관계 법령에 따라 안전하게 관리됩니다.\n\n
+        제 2조 (목적)\n타이아(주)에서 수집한 개인정보는 정보통신망 이용촉진 및 정보보호 등에 관한 법률,\n개인정보보호법 등 관계 법령에 따라 안전하게 관리됩니다.\n\n
+        제 3조 (목적)\n타이아(주)에서 수집한 개인정보는 정보통신망 이용촉진 및 정보보호 등에 관한 법률,\n개인정보보호법 등 관계 법령에 따라 안전하게 관리됩니다.\n\n
+        제 4조 (목적)\n타이아(주)에서 수집한 개인정보는 정보통신망 이용촉진 및 정보보호 등에 관한 법률,\n개인정보보호법 등 관계 법령에 따라 안전하게 관리됩니다.\n\n
+        제 5조 (목적)\n타이아(주)에서 수집한 개인정보는 정보통신망 이용촉진 및 정보보호 등에 관한 법률,\n개인정보보호법 등 관계 법령에 따라 안전하게 관리됩니다.\n\n
+        제 6조 (목적)\n타이아(주)에서 수집한 개인정보는 정보통신망 이용촉진 및 정보보호 등에 관한 법률,\n개인정보보호법 등 관계 법령에 따라 안전하게 관리됩니다.\n\n
+        제 7조 (목적)\n타이아(주)에서 수집한 개인정보는 정보통신망 이용촉진 및 정보보호 등에 관한 법률,\n개인정보보호법 등 관계 법령에 따라 안전하게 관리됩니다.\n\n
+        제 8조 (목적)</string>
+    <string name="customer_service_open_title">This application is Copyright ©NULL Corp. All rights reserved.\n\nThe following sets forth attribution notices for third party software that may be contained in this application.</string>
+    <string name="customer_service_open_android">android</string>
+    <string name="customer_service_open_android_context">Copyright 2024 NULL\n\nLicense under the Apache License, Version 2.0 (the "License");\nyou may not use this file except in compliance with the License.\n
+    \nhttp://www.apache.org/licenses/LICENCE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on</string>
+    <string name="customer_service_open_etc">Etc.</string>
+
+    <string name="customer_service_email_inquiry_title_1">BrokenMirror에 궁금한 게 있으신가요?</string>
+    <string name="customer_service_email_inquiry_title_2">아래에 남겨주시면 친절히 답변해드리겠습니다.</string>
+    <string name="customer_service_email_inquiry_opt_1">문의자 정보를 정확하게 기입해주세요</string>
+    <string name="customer_service_email_inquiry_opt_1_1">정보를 정확하게 기입하지 않으면 답변 수신이 어려울 수 있습니다. 정확하게 작성 부탁드립니다.</string>
+    <string name="customer_service_email_inquiry_opt_2">문의 내용을 자세히 써주세요</string>
+    <string name="customer_service_email_inquiry_opt_2_1">고객님의 궁금증을 명확하게 파악하고 답변 드리는데 도움이 됩니다.</string>
+    <string name="customer_service_email_inquiry_opt_3">고객님 문의 내용에 담긴 개인정보는 답변 후에 전부 파기됩니다.</string>
+    <string name="customer_service_email_inquiry_hint_1">답변 받으실 이메일을 입력해주세요</string>
+    <string name="customer_service_email_inquiry_hint_2">문의 내용</string>
+    <string name="customer_service_email_inquiry_button">문의하기</string>
+    <string name="customer_service_email_inquiry_index">[BrokenMirror] 이메일 문의</string>
+    <string name="customer_service_email_inquiry_choose">이메일 앱 선택</string>
+    <string name="customer_service_email_inquiry_contact">답변 받으실 이메일 : </string>
+    <string name="customer_service_email_inquiry_no_app">이메일 앱이 기기에 설치 되어 있어야 합니다</string>
+    <string name="customer_service_email_inquiry_select_email">이메일 앱을 선택해주세요</string>
+    <string name="customer_service_email_inquiry_id">아이디 : </string>
+    <string name="customer_service_email_inquiry_name">성명 : </string>
+
+    <string name="customer_service_error_inquiry_title_1">이용 중 오류가 발생하셨나요?</string>
+    <string name="customer_service_error_inquiry_opt_2">오류 발생 시각과 내용을 자세히 써주세요</string>
+    <string name="customer_service_error_inquiry_opt_2_1">담당자가 오류 내용을 명확하게 파악하는데 도움이 됩니다.</string>
+    <string name="customer_service_error_inquiry_hint_2">오류 내용 </string>
+    <string name="customer_service_error_inquiry_index">[BrokenMirror] 오류 문의</string>
+    <string name="customer_service_error_inquiry_device">사용 중인 기기명 : </string>
+    <string name="customer_service_error_inquiry_date">오류 발생 일자 : </string>
+
+    <!-- PopUp -->
+    <string name="popup_at">(으)로</string>
+    <string name="popup_email_send">이메일 인증번호를 발송했습니다.</string>
+    <string name="popup_do_not">앱을 종료하지마시고,\n입력하신 이메일 수신내역을\n확인해주시기 바랍니다.</string>
+    <string name="popup_dialog_wrong">잘못된 인증번호 입니다.\n다시 확인해주시기 바랍니다.\n(테스트용 : 12345)</string>
+    <string name="popup_send_to_new_phone">신규 휴대폰번호로\n인증번호를 발송했습니다.</string>
+    <string name="popup_key_lack">보유 중인 보안키가 부족합니다.\n보안키를 구매하시겠습니까?</string>
+    <string name="popup_email_inquiry">누락된 정보가 있습니다.\n이메일이나 본문을 확인해주세요.</string>
+
+    <!-- Test -->
+    <string name="test_pushed_back_btn">뒤로가기 버튼이 눌렸습니다</string>
+    <string name="test_user0">test</string>
+    <string name="test_user_name">User0</string>
+    <string name="test_date">2024. 02. 05</string>
+    <string name="test_date_2">24.02.28(수)</string>
+    <string name="test_date_3">2024.03.26 16:16</string>
+    <string name="test_time_hr_min">17:54</string>
+    <string name="test_phone_num">010-0000-0000</string>
+    <string name="test_phone_num2">010-1234-5678</string>
+    <string name="test_notification_context">[사진전송] User0님이 사진을 전송하였습니다.</string>
+    <string name="test_notification_time">2023.06.30(금) 15:09</string>
+    <string name="test_version">1.0.0</string>
+    <string name="test_inquiry">https://www.tiasolution.net</string>
+    <string name="test_email">tiasolution@tiasolution.net</string>
+    <string name="test_network_0">테스트 화면 : 네트워크 에러</string>
+    <string name="test_network_1">테스트 화면 : 네트워크 연결 실패</string>
+    <string name="test_device">SM-S916N</string>
+    <string name="test_ip">172.255.255.255</string>
+    <string name="test_not_implemented">미구현</string>
+    <string name="test_need_server">서버 증축 후 구현 예정</string>
+
+    <string-array name="friend_sections">
+        <item>ㄱ</item>
+        <item>ㄴ</item>
+        <item>ㄷ</item>
+        <item>ㄹ</item>
+        <item>ㅁ</item>
+        <item>ㅂ</item>
+        <item>ㅅ</item>
+        <item>ㅇ</item>
+        <item>ㅈ</item>
+        <item>ㅊ</item>
+        <item>ㅋ</item>
+        <item>ㅌ</item>
+        <item>ㅍ</item>
+        <item>ㅎ</item>
+        <item>A</item>
+        <item>H</item>
+        <item>O</item>
+        <item>V</item>
+        <item>Z</item>
+        <item>1</item>
+        <item>#</item>
+    </string-array>
+
+</resources>

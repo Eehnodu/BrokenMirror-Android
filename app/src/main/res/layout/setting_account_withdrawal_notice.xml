@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basic">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/notosans_medium_ttf"
+            android:textSize="18sp"
+            android:textColor="@color/main"
+            android:text="@string/setting_account_membership_withdrawal"
+            app:layout_constraintStart_toStartOf="@id/header"
+            app:layout_constraintTop_toTopOf="@id/header"
+            app:layout_constraintBottom_toBottomOf="@id/header"
+            app:layout_constraintEnd_toEndOf="@id/header"/>
+
+        <Button
+            android:id="@+id/setting_account_withdrawal_notice_close_button"
+            android:layout_width="30dp"
+            android:layout_height="46dp"
+            app:layout_constraintEnd_toEndOf="@+id/header"
+            app:layout_constraintTop_toTopOf="@+id/header"
+            app:layout_constraintBottom_toBottomOf="@+id/header"
+            android:background="@drawable/btn_close"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:overScrollMode="never"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintBottom_toTopOf="@+id/setting_account_withdrawal_notice_next_button">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:paddingTop="30dp"
+                android:text="@string/setting_account_withdrawal_notice_title"
+                android:textSize="16sp"
+                android:textColor="@color/text_default_2"
+                android:fontFamily="@font/notosans_regular_ttf"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/subtitle"/>
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="7dp"
+                android:paddingBottom="22dp"
+                android:includeFontPadding="false"
+                android:text="@string/setting_account_withdrawal_notice_subtitle"
+                android:textSize="13sp"
+                android:textColor="@color/afafaf"
+                android:fontFamily="@font/notosans_regular_ttf"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                app:layout_constraintBottom_toTopOf="@+id/setting_account_withdrawal_notice_layout_0"/>
+
+            <LinearLayout
+                android:id="@+id/setting_account_withdrawal_notice_layout_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/btn_filled_long_round_grey"
+                app:layout_constraintTop_toBottomOf="@+id/subtitle"
+                app:layout_constraintBottom_toTopOf="@+id/setting_account_withdrawal_notice_layout_1">
+
+                <View
+                    android:id="@+id/setting_account_withdrawal_notice_check_0"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/checkbox_empty"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="16dp"
+                    android:includeFontPadding="false"
+                    android:text="@string/setting_account_withdrawal_notice_list_0"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_default_2"
+                    android:fontFamily="@font/notosans_regular_ttf"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setting_account_withdrawal_notice_layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="20dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/btn_filled_long_round_grey"
+                app:layout_constraintTop_toBottomOf="@+id/setting_account_withdrawal_notice_layout_0"
+                app:layout_constraintBottom_toTopOf="@+id/setting_account_withdrawal_notice_layout_2">
+
+                <View
+                    android:id="@+id/setting_account_withdrawal_notice_check_1"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/checkbox_empty"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:paddingStart="16dp"
+                    android:text="@string/setting_account_withdrawal_notice_list_1"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_default_2"
+                    android:fontFamily="@font/notosans_regular_ttf"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setting_account_withdrawal_notice_layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="20dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/btn_filled_long_round_grey"
+                app:layout_constraintTop_toBottomOf="@+id/setting_account_withdrawal_notice_layout_1"
+                app:layout_constraintBottom_toTopOf="@+id/setting_account_withdrawal_notice_layout_3">
+
+                <View
+                    android:id="@+id/setting_account_withdrawal_notice_check_2"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/checkbox_empty"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:paddingStart="16dp"
+                    android:text="@string/setting_account_withdrawal_notice_list_2"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_default_2"
+                    android:fontFamily="@font/notosans_regular_ttf"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setting_account_withdrawal_notice_layout_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="20dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/btn_filled_long_round_grey"
+                app:layout_constraintTop_toBottomOf="@+id/setting_account_withdrawal_notice_layout_2"
+                app:layout_constraintBottom_toTopOf="@+id/setting_account_withdrawal_notice_layout_4">
+
+                <View
+                    android:id="@+id/setting_account_withdrawal_notice_check_3"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/checkbox_empty"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:paddingStart="16dp"
+                    android:text="@string/setting_account_withdrawal_notice_list_3"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_default_2"
+                    android:fontFamily="@font/notosans_regular_ttf"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setting_account_withdrawal_notice_layout_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="20dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/btn_filled_long_round_grey"
+                app:layout_constraintTop_toBottomOf="@+id/setting_account_withdrawal_notice_layout_3">
+
+                <View
+                    android:id="@+id/setting_account_withdrawal_notice_check_4"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/checkbox_empty"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:paddingStart="16dp"
+                    android:text="@string/setting_account_withdrawal_notice_list_4"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_default_2"
+                    android:fontFamily="@font/notosans_regular_ttf"/>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/setting_account_withdrawal_notice_next_button"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/login_main_loginbtn"
+        android:text="@string/find_id_next"
+        android:fontFamily="@font/notosans_regular_ttf"
+        android:textColor="@color/main"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

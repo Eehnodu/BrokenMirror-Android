@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/basic">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="30dp"
+            android:layout_height="46dp"
+            android:background="@drawable/btn_back"
+            app:layout_constraintStart_toStartOf="@+id/header"
+            app:layout_constraintTop_toTopOf="@+id/header"
+            app:layout_constraintBottom_toBottomOf="@+id/header"/>
+
+        <Button
+            android:id="@+id/close_button"
+            android:layout_width="30dp"
+            android:layout_height="46dp"
+            android:background="@drawable/btn_close"
+            app:layout_constraintEnd_toEndOf="@+id/header"
+            app:layout_constraintTop_toTopOf="@+id/header"
+            app:layout_constraintBottom_toBottomOf="@+id/header"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/notosans_medium_ttf"
+            android:textSize="18sp"
+            android:textColor="@color/main"
+            android:text="@string/join_agree"
+            app:layout_constraintStart_toStartOf="@id/header"
+            app:layout_constraintTop_toTopOf="@id/header"
+            app:layout_constraintBottom_toBottomOf="@id/header"
+            app:layout_constraintEnd_toEndOf="@id/header"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:overScrollMode="never"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintBottom_toTopOf="@+id/agree_button">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="40dp"
+            android:paddingBottom="50dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosans_regular_ttf"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="3sp"
+                android:text="@string/join_agree_description"
+                android:textColor="@color/text_default_2"
+                android:textSize="17sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title"
+                app:layout_constraintVertical_bias="0.9">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="60dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/list_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="13dp"
+                        android:paddingBottom="13dp"
+                        app:layout_constraintBottom_toTopOf="@+id/list_1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_chainStyle="packed">
+
+                        <View
+                            android:id="@+id/view_0"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/checkbox_deactivate"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/text_0"
+                            app:layout_constraintEnd_toStartOf="@id/text_0"
+                            app:layout_constraintBottom_toBottomOf="@id/text_0"/>
+
+                        <TextView
+                            android:id="@+id/text_0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/notosans_regular_ttf"
+                            android:includeFontPadding="false"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="5dp"
+                            android:text="@string/join_agree_agreement_0"
+                            android:textColor="@color/join_agreement"
+                            android:textSize="17sp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/view_0"
+                            app:layout_constraintEnd_toStartOf="@+id/necessary_0"/>
+
+                        <TextView
+                            android:id="@+id/necessary_0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/notosans_regular_ttf"
+                            android:includeFontPadding="false"
+                            android:text="@string/join_agree_necessary"
+                            android:textColor="@color/necessary"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@id/text_0"
+                            app:layout_constraintStart_toEndOf="@+id/text_0"
+                            app:layout_constraintTop_toTopOf="@id/text_0"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/list_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="13dp"
+                        android:paddingBottom="13dp"
+                        app:layout_constraintBottom_toTopOf="@+id/list_2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/list_0">
+
+                        <View
+                            android:id="@+id/view_1"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/checkbox_deactivate"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"/>
+
+                        <TextView
+                            android:id="@+id/text_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/notosans_regular_ttf"
+                            android:includeFontPadding="false"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="5dp"
+                            android:maxWidth="300dp"
+                            android:text="@string/join_agree_agreement_1"
+                            android:textColor="@color/join_agreement"
+                            android:textSize="17sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/view_1"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/necessary_1"/>
+
+                        <TextView
+                            android:id="@+id/necessary_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/notosans_regular_ttf"
+                            android:includeFontPadding="false"
+                            android:text="@string/join_agree_necessary"
+                            android:textColor="@color/necessary"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/text_1"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/list_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="13dp"
+                        android:paddingBottom="13dp"
+                        app:layout_constraintBottom_toTopOf="@id/list_3"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/list_1">
+
+                        <View
+                            android:id="@+id/view_2"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/checkbox_deactivate"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+                        <TextView
+                            android:id="@+id/text_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/notosans_regular_ttf"
+                            android:includeFontPadding="false"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="5dp"
+                            android:text="@string/join_agree_agreement_2"
+                            android:textColor="@color/join_agreement"
+                            android:textSize="17sp"
+                            app:layout_constraintBottom_toBottomOf="@id/view_2"
+                            app:layout_constraintStart_toEndOf="@id/view_2"
+                            app:layout_constraintTop_toTopOf="@id/view_2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/notosans_regular_ttf"
+                            android:includeFontPadding="false"
+                            android:text="@string/join_agree_necessary"
+                            android:textColor="@color/necessary"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@id/text_2"
+                            app:layout_constraintStart_toEndOf="@+id/text_2"
+                            app:layout_constraintTop_toTopOf="@id/text_2" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/list_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="13dp"
+                        android:paddingBottom="13dp"
+                        app:layout_constraintBottom_toTopOf="@+id/list_4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/list_2">
+
+                        <View
+                            android:id="@+id/view_3"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/checkbox_deactivate"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+                        <TextView
+                            android:id="@+id/text_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/notosans_regular_ttf"
+                            android:includeFontPadding="false"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="5dp"
+                            android:text="@string/join_agree_agreement_3"
+                            android:textColor="@color/join_agreement"
+                            android:textSize="17sp"
+                            app:layout_constraintBottom_toBottomOf="@id/view_3"
+                            app:layout_constraintStart_toEndOf="@id/view_3"
+                            app:layout_constraintTop_toTopOf="@id/view_3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/notosans_regular_ttf"
+                            android:includeFontPadding="false"
+                            android:text="@string/join_agree_necessary"
+                            android:textColor="@color/necessary"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@id/text_3"
+                            app:layout_constraintStart_toEndOf="@+id/text_3"
+                            app:layout_constraintTop_toTopOf="@id/text_3" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/list_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="13dp"
+                        android:paddingBottom="13dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/list_3">
+
+                        <View
+                            android:id="@+id/view_4"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/checkbox_deactivate"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+                        <TextView
+                            android:id="@+id/text_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/notosans_regular_ttf"
+                            android:includeFontPadding="false"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="5dp"
+                            android:text="@string/join_agree_agreement_4"
+                            android:textColor="@color/join_agreement"
+                            android:textSize="17sp"
+                            app:layout_constraintBottom_toBottomOf="@id/view_4"
+                            app:layout_constraintStart_toEndOf="@id/view_4"
+                            app:layout_constraintTop_toTopOf="@id/view_4" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/notosans_regular_ttf"
+                            android:includeFontPadding="false"
+                            android:text="@string/join_agree_unnecessary"
+                            android:textColor="@color/unnecessary"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@id/text_4"
+                            app:layout_constraintStart_toEndOf="@+id/text_4"
+                            app:layout_constraintTop_toTopOf="@id/text_4" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </HorizontalScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/agree_button"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/main"
+        android:text="@string/join_agree_next"
+        android:fontFamily="@font/notosans_regular_ttf"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:includeFontPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

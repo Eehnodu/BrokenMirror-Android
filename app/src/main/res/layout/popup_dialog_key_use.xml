@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:maxWidth="500dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/content_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxWidth="460dp"
+        android:paddingTop="30dp"
+        android:background="@drawable/bg_popup"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="10dp"
+            android:gravity="center_horizontal"
+            android:includeFontPadding="false"
+            android:text="@string/message_bottom_key"
+            android:textSize="17sp"
+            android:textColor="@color/id_result"
+            android:fontFamily="@font/notosans_regular_ttf"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/text_layout_0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="180dp"
+                android:textColor="@color/text_default_2"
+                android:text="@string/test_user_name"
+                android:textSize="15sp"
+                android:fontFamily="@font/notosans_regular_ttf"
+                android:includeFontPadding="false"
+                android:singleLine="true"/>
+
+            <TextView
+                android:id="@+id/receiver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="3dp"
+                android:includeFontPadding="false"
+                android:textSize="15sp"
+                android:textColor="@color/text_default_2"
+                android:text="@string/message_popup_receiver"
+                android:fontFamily="@font/notosans_regular_ttf"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/request"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textSize="15sp"
+            android:text="@string/message_popup_request"
+            android:textColor="@color/text_default_2"
+            android:fontFamily="@font/notosans_regular_ttf"
+            app:layout_constraintTop_toBottomOf="@id/text_layout_0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/accept"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="35dp"
+            android:gravity="center"
+            android:paddingTop="6dp"
+            android:includeFontPadding="false"
+            android:textColor="@color/necessary"
+            android:text="@string/message_notice_context_3"
+            android:fontFamily="@font/notosans_regular_ttf"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@+id/request"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/accept"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:includeFontPadding="false"
+                android:background="@drawable/btn_popup_dialog_two_grey"
+                android:text="@string/setting_account_withdrawal_notice_popup_cancel"
+                android:textColor="@color/text_default_2"
+                android:textSize="16sp"
+                android:fontFamily="@font/notosans_regular_ttf"/>
+
+            <Button
+                android:id="@+id/confirm_button"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_popup_dialog_two_main"
+                android:text="@string/find_id_result_null_confirm"
+                android:textColor="@color/white"
+                android:fontFamily="@font/notosans_regular_ttf"
+                android:textSize="16sp"
+                android:includeFontPadding="false"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

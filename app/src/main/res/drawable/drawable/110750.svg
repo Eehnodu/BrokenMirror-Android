@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="30"
+   height="30"
+   viewBox="0 0 30 30"
+   version="1.1"
+   id="svg15"
+   sodipodi:docname="110750.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview17"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <defs
+     id="defs5">
+    <clipPath
+       id="iisu1nylka">
+      <path
+         data-name="사각형 60883"
+         transform="translate(65 169)"
+         style="fill:none"
+         d="M0 0h30v30H0z"
+         id="path2" />
+    </clipPath>
+  </defs>
+  <g
+     data-name="그룹 110750"
+     id="g13">
+    <g
+       data-name="마스크 그룹 93438"
+       transform="translate(-65,-169)"
+       clip-path="url(#iisu1nylka)"
+       id="g11">
+      <path
+         data-name="패스 464966"
+         d="M 0,0 H 30 V 30 H 0 Z"
+         style="fill:none"
+         transform="translate(65,169)"
+         id="path7" />
+      <path
+         data-name="패스 464967"
+         d="m 13.75,29.487 v -4.5 a 11.877,11.877 0 1 1 12.5,-11.862 c 0,6.188 -4.3,12.413 -10.712,15.5 z M 14.375,3.75 a 9.375,9.375 0 0 0 0,18.75 h 1.875 v 2.875 c 4.55,-2.875 7.5,-7.6 7.5,-12.25 A 9.378,9.378 0 0 0 14.375,3.75 Z m -1.25,14.375 h 2.5 v 2.5 h -2.5 z m 2.5,-1.875 h -2.5 c 0,-4.062 3.75,-3.75 3.75,-6.25 a 2.5,2.5 0 0 0 -5,0 h -2.5 a 5,5 0 0 1 10,0 c 0,3.125 -3.75,3.438 -3.75,6.25 z"
+         style="fill:#172760"
+         transform="translate(65,169)"
+         id="path9" />
+    </g>
+  </g>
+</svg>

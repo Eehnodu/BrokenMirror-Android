@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".androidTest">
+
+    <ScrollView
+        android:id="@+id/parent_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="@+id/parent_scrollView"
+            app:layout_constraintEnd_toEndOf="@+id/parent_scrollView"
+            app:layout_constraintStart_toStartOf="@+id/parent_scrollView"
+            app:layout_constraintTop_toTopOf="@+id/parent_scrollView">
+
+            <TextView
+                android:id="@+id/ssaid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SSAID"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ssaid_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text=": "
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ssaid" />
+
+            <TextView
+                android:id="@+id/RSA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RSA"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ssaid_text" />
+
+            <TextView
+                android:id="@+id/RSA_public"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="🔑 Public Key: "
+                android:textColor="@color/text_default_2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/RSA" />
+
+            <TextView
+                android:id="@+id/RSA_private"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="🔑 Private Key: "
+                android:textColor="@color/text_default_2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/RSA_public" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/VoIP"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:paddingTop="10dp"-->
+<!--                android:paddingBottom="10dp"-->
+<!--                android:text="VoIP"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/RSA_private" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/VoIP_btn"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/btn_round_main"-->
+<!--                android:text="CALL"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/VoIP" />-->
+
+            <TextView
+                android:id="@+id/chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="채팅"
+                android:textStyle="bold"
+                android:textColor="@color/main"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/RSA_private"
+                app:layout_constraintBottom_toTopOf="@+id/my_chat"/>
+
+            <TextView
+                android:id="@+id/my_chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="  나 : "
+                app:layout_constraintBottom_toTopOf="@+id/other_chat"
+                app:layout_constraintTop_toBottomOf="@+id/chat"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/other_chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="  상대방 : "
+                app:layout_constraintBottom_toTopOf="@+id/chat_input"
+                app:layout_constraintTop_toBottomOf="@+id/my_chat"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <EditText
+                android:id="@+id/chat_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/other_chat"
+                android:paddingStart="10dp"/>
+
+            <Button
+                android:id="@+id/send_button"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_round_main"
+                android:text="전송"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/chat_input"
+                app:layout_constraintEnd_toEndOf="@+id/chat_input"
+                android:layout_margin="15dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

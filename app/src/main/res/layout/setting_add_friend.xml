@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_layout_setting_add_friend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basic"
+    android:padding="20dp">
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:background="@android:color/transparent"
+        android:text="@string/setting_account_withdrawal_notice_popup_cancel"
+        android:textColor="@color/friend_list"
+        android:includeFontPadding="false"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/add_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/setting_add_friend"
+        android:textColor="@color/friend_list"
+        app:layout_constraintTop_toTopOf="@id/cancel_button"
+        app:layout_constraintBottom_toBottomOf="@id/cancel_button"
+        app:layout_constraintStart_toEndOf="@id/cancel_button"
+        app:layout_constraintEnd_toStartOf="@id/done_button"
+        app:layout_constraintVertical_bias="0.5"/>
+
+
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:background="@android:color/transparent"
+        android:text="@string/find_id_result_null_confirm"
+        android:textColor="@color/friend_list"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!--friend_name-->
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:inputType="textPersonName"
+        android:textColor="@color/friend_list"
+        android:hint="@string/setting_add_friend_name"
+        android:textColorHint="@color/hint"
+        android:paddingStart="10dp"
+        android:paddingEnd="7dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/count_name"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <View
+        android:id="@+id/underline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/friend_list"
+        app:layout_constraintBottom_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/count_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/count_name"
+        android:textColor="@color/friend_list"
+        app:layout_constraintEnd_toStartOf="@+id/delete_name"
+        app:layout_constraintBottom_toBottomOf="@+id/underline"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/delete_name"
+        android:layout_width="30dp"
+        android:layout_height="46dp"
+        android:background="@drawable/btn_close"
+        app:layout_constraintBottom_toBottomOf="@+id/underline"
+        app:layout_constraintEnd_toEndOf="@+id/underline" />
+
+
+    <!--friend_phone_number-->
+    <EditText
+        android:id="@+id/friend_phone_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:inputType="phone"
+        android:textColor="@color/friend_list"
+        android:hint="@string/setting_add_friend_phone_number"
+        android:textColorHint="@color/hint"
+        android:paddingStart="10dp"
+        android:paddingBottom="8dp"
+        android:paddingEnd="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/delete_phone_number"
+        android:layout_marginTop="30dp" />
+
+    <View
+        android:id="@+id/underline2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/friend_list"
+        app:layout_constraintBottom_toBottomOf="@+id/friend_phone_number" />
+
+    <Button
+        android:id="@+id/delete_phone_number"
+        android:layout_width="30dp"
+        android:layout_height="46dp"
+        android:background="@drawable/btn_close"
+        app:layout_constraintBottom_toBottomOf="@+id/underline2"
+        app:layout_constraintEnd_toEndOf="@+id/underline2" />
+
+    <TextView
+        android:id="@+id/no_hyphen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/setting_add_friend_noHyphen"
+        android:textColor="@color/text_default_2"
+        app:layout_constraintTop_toBottomOf="@+id/underline2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="5dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

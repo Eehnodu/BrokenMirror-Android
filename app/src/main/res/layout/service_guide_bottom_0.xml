@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/text0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="70dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:includeFontPadding="false"
+        android:gravity="center"
+        android:text="@string/service_guide_desc_0"
+        android:textSize="26sp"
+        android:textColor="@color/main"
+        android:fontFamily="@font/notosans_regular_ttf"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/text1"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16sp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:includeFontPadding="false"
+        android:gravity="center_horizontal"
+        android:text="@string/service_guide_desc_1"
+        android:textSize="30sp"
+        android:textColor="@color/main"
+        android:fontFamily="@font/notosans_semibold_ttf"
+        app:layout_constraintTop_toBottomOf="@id/text0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/text2"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:includeFontPadding="false"
+        android:text="@string/service_guide_desc_2"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/notosans_regular_ttf"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/text1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/text3"/>
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:includeFontPadding="false"
+        android:text="@string/service_guide_desc_3"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/notosans_regular_ttf"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/text2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/text4"/>
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="70dp"
+        android:includeFontPadding="false"
+        android:text="@string/service_guide_desc_4"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/notosans_regular_ttf"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/text3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

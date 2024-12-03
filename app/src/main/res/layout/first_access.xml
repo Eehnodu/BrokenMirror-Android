@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/basic">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:overScrollMode="never"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/next_button">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp"
+            android:paddingBottom="30dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="@string/first_access_title"
+                    android:textSize="20sp"
+                    android:textColor="@color/id_result"
+                    android:fontFamily="@font/notosans_medium_ttf"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/subtitle"/>
+
+                <TextView
+                    android:id="@+id/subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="40dp"
+                    android:includeFontPadding="false"
+                    android:text="@string/first_access_desc"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_default_2"
+                    app:layout_constraintTop_toBottomOf="@+id/title"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/list_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/title_layout">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/list_0_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="25dp"
+                    android:paddingEnd="25dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:background="@drawable/bg_first_access"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <View
+                        android:id="@+id/first_img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/permission_0"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/first_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginBottom="3dp"
+                        android:includeFontPadding="false"
+                        android:text="@string/first_access_per_title_0"
+                        android:textSize="16sp"
+                        android:textColor="@color/friend_list"
+                        android:fontFamily="@font/notosans_regular_ttf"
+                        app:layout_constraintVertical_chainStyle="packed"
+                        app:layout_constraintStart_toEndOf="@+id/first_img"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@+id/first_sub"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/first_sub"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="@string/first_access_per_desc_0"
+                        android:textSize="14sp"
+                        android:textColor="@color/first_access"
+                        android:fontFamily="@font/notosans_regular_ttf"
+                        app:layout_constraintTop_toBottomOf="@id/first_title"
+                        app:layout_constraintStart_toStartOf="@id/first_title"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/list_1_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingStart="25dp"
+                    android:paddingEnd="25dp"
+                    android:background="@drawable/bg_first_access"
+                    app:layout_constraintTop_toBottomOf="@+id/list_0_layout">
+
+                    <View
+                        android:id="@+id/second_img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/permission_1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/second_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginBottom="3dp"
+                        android:includeFontPadding="false"
+                        android:text="@string/first_access_per_title_1"
+                        android:textSize="16sp"
+                        android:textColor="@color/friend_list"
+                        android:fontFamily="@font/notosans_regular_ttf"
+                        app:layout_constraintVertical_chainStyle="packed"
+                        app:layout_constraintStart_toEndOf="@+id/second_img"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@+id/second_sub"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/second_sub"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="@string/first_access_per_desc_1"
+                        android:textSize="14sp"
+                        android:textColor="@color/first_access"
+                        android:fontFamily="@font/notosans_regular_ttf"
+                        app:layout_constraintTop_toBottomOf="@id/second_title"
+                        app:layout_constraintStart_toStartOf="@+id/second_title"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/list_2_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingStart="25dp"
+                    android:paddingEnd="25dp"
+                    android:background="@drawable/bg_first_access"
+                    app:layout_constraintTop_toBottomOf="@+id/list_1_layout">
+
+                    <View
+                        android:id="@+id/third_img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/permission_2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/third_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginBottom="3dp"
+                        android:includeFontPadding="false"
+                        android:text="@string/first_access_per_title_2"
+                        android:textSize="16sp"
+                        android:textColor="@color/friend_list"
+                        android:fontFamily="@font/notosans_regular_ttf"
+                        app:layout_constraintVertical_chainStyle="packed"
+                        app:layout_constraintStart_toEndOf="@+id/third_img"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@+id/third_sub"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/third_sub"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="@string/first_access_per_desc_2"
+                        android:textSize="14sp"
+                        android:textColor="@color/first_access"
+                        android:fontFamily="@font/notosans_regular_ttf"
+                        app:layout_constraintTop_toBottomOf="@id/third_title"
+                        app:layout_constraintStart_toStartOf="@id/third_title"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/list_3_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="25dp"
+                    android:paddingEnd="25dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:background="@drawable/bg_first_access"
+                    app:layout_constraintTop_toBottomOf="@+id/list_2_layout">
+
+                    <View
+                        android:id="@+id/forth_img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/permission_3"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/forth_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginBottom="3dp"
+                        android:includeFontPadding="false"
+                        android:text="@string/first_access_per_title_3"
+                        android:textSize="16sp"
+                        android:textColor="@color/friend_list"
+                        android:fontFamily="@font/notosans_regular_ttf"
+                        app:layout_constraintVertical_chainStyle="packed"
+                        app:layout_constraintStart_toEndOf="@+id/forth_img"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@+id/forth_sub"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/forth_sub"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="@string/first_access_per_desc_3"
+                        android:textSize="14sp"
+                        android:textColor="@color/first_access"
+                        android:fontFamily="@font/notosans_regular_ttf"
+                        app:layout_constraintTop_toBottomOf="@id/forth_title"
+                        app:layout_constraintStart_toStartOf="@id/forth_title"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/list_4_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingStart="25dp"
+                    android:paddingEnd="25dp"
+                    android:background="@drawable/bg_first_access"
+                    app:layout_constraintTop_toBottomOf="@+id/list_3_layout">
+
+                    <View
+                        android:id="@+id/fifth_img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/permission_4"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/fifth_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginBottom="3dp"
+                        android:includeFontPadding="false"
+                        android:text="@string/first_access_per_title_4"
+                        android:textSize="16sp"
+                        android:textColor="@color/friend_list"
+                        android:fontFamily="@font/notosans_regular_ttf"
+                        app:layout_constraintVertical_chainStyle="packed"
+                        app:layout_constraintStart_toEndOf="@+id/fifth_img"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@+id/fifth_sub"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/fifth_sub"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="@string/first_access_per_desc_4"
+                        android:textSize="14sp"
+                        android:textColor="@color/first_access"
+                        android:fontFamily="@font/notosans_regular_ttf"
+                        app:layout_constraintTop_toBottomOf="@id/fifth_title"
+                        app:layout_constraintStart_toStartOf="@id/fifth_title"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/list_5_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingStart="25dp"
+                    android:paddingEnd="25dp"
+                    android:background="@drawable/bg_first_access"
+                    app:layout_constraintTop_toBottomOf="@+id/list_4_layout">
+
+                    <View
+                        android:id="@+id/sixth_img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/permission_5"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/sixth_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginBottom="3dp"
+                        android:includeFontPadding="false"
+                        android:text="@string/first_access_per_title_5"
+                        android:textSize="16sp"
+                        android:textColor="@color/friend_list"
+                        android:fontFamily="@font/notosans_regular_ttf"
+                        app:layout_constraintVertical_chainStyle="packed"
+                        app:layout_constraintStart_toEndOf="@+id/sixth_img"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@+id/sixth_sub"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/sixth_sub"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="@string/first_access_per_desc_5"
+                        android:textSize="14sp"
+                        android:textColor="@color/first_access"
+                        android:fontFamily="@font/notosans_regular_ttf"
+                        app:layout_constraintTop_toBottomOf="@id/sixth_title"
+                        app:layout_constraintStart_toStartOf="@id/sixth_title"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:includeFontPadding="false"
+        android:gravity="center"
+        android:background="@color/main"
+        android:textColor="@color/white"
+        android:text="@string/find_id_next"
+        android:fontFamily="@font/notosans_regular_ttf"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

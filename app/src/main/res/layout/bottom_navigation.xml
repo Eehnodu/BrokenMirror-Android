@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@drawable/bottom_navigation_top">
+
+    <FrameLayout
+        android:id="@+id/nav_friend_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <View
+            android:id="@+id/nav_friend_icon"
+            android:layout_width="26dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bottom_navigation_icon_friend"/>
+
+        <TextView
+            android:id="@+id/nav_friend_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center"
+            android:text="@string/friend_list"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/notosans_regular_ttf"
+            android:textSize="12sp"
+            android:textColor="@color/text_default_2"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/nav_chat_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <View
+            android:id="@+id/nav_chat_icon"
+            android:layout_width="26dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bottom_navigation_icon_chat"/>
+
+        <TextView
+            android:id="@+id/nav_chat_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center"
+            android:text="@string/friend_list_chat"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/notosans_regular_ttf"
+            android:textSize="12sp"
+            android:textColor="@color/text_default_2"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/nav_noti_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <View
+            android:id="@+id/nav_noti_icon"
+            android:layout_width="26dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bottom_navigation_icon_bell"/>
+
+        <TextView
+            android:id="@+id/nav_noti_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center"
+            android:text="@string/friend_list_notice"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/notosans_regular_ttf"
+            android:textSize="12sp"
+            android:textColor="@color/text_default_2"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/nav_set_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <View
+            android:id="@+id/nav_set_icon"
+            android:layout_width="26dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bottom_navigation_icon_setting"/>
+
+        <TextView
+            android:id="@+id/nav_set_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center"
+            android:text="@string/friend_list_setting"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/notosans_regular_ttf"
+            android:textSize="12sp"
+            android:textColor="@color/text_default_2"/>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/setting_account_main_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basic"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="12dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/setting_account_pw_back_button"
+            android:layout_width="30dp"
+            android:layout_height="46dp"
+            android:background="@drawable/btn_back"
+            app:layout_constraintStart_toStartOf="@+id/header"
+            app:layout_constraintTop_toTopOf="@+id/header"
+            app:layout_constraintBottom_toBottomOf="@+id/header"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/notosans_medium_ttf"
+            android:textSize="18sp"
+            android:textColor="@color/main"
+            android:text="@string/setting_account_change_pw"
+            app:layout_constraintStart_toStartOf="@id/header"
+            app:layout_constraintTop_toTopOf="@id/header"
+            app:layout_constraintBottom_toBottomOf="@id/header"
+            app:layout_constraintEnd_toEndOf="@id/header"/>
+
+        <Button
+            android:id="@+id/close_button"
+            android:layout_width="30dp"
+            android:layout_height="46dp"
+            android:background="@drawable/btn_close"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/header"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintBottom_toTopOf="@+id/button_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="40dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/text_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:paddingBottom="35dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3dp"
+                    android:includeFontPadding="false"
+                    android:text="@string/setting_account_pw_title"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_default_2"
+                    android:fontFamily="@font/notosans_regular_ttf"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/setting_account_pw_find_pw_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="35dp"
+                    android:includeFontPadding="false"
+                    android:text="@string/setting_account_pw_question"
+                    android:textColor="@color/main"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/notosans_regular_ttf"
+                    app:layout_constraintTop_toBottomOf="@+id/title"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/current_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/text_layout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:id="@+id/current_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="3dp"
+                    android:text="@string/setting_account_pw_current"
+                    android:textSize="13sp"
+                    android:textColor="@color/text_default_2"
+                    android:fontFamily="@font/notosans_regular_ttf"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <View
+                    android:id="@+id/current_dot"
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/red_dot"
+                    app:layout_constraintStart_toEndOf="@+id/current_textView"
+                    app:layout_constraintTop_toTopOf="@+id/current_textView"/>
+
+                <EditText
+                    android:id="@+id/setting_account_pw_current_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/login_main_edittext"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="50dp"
+                    android:hint="@string/setting_account_pw_title"
+                    android:textColorHint="@color/hint"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/notosans_regular_ttf"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:inputType="textPassword"
+                    android:privateImeOptions="defaultInputmode=english"
+                    android:textCursorDrawable="@drawable/edittext_cursor_black"
+                    android:imeOptions="flagNoExtractUi"
+                    app:layout_constraintTop_toBottomOf="@+id/current_textView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <Button
+                    android:id="@+id/setting_account_pw_current_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn_visible"
+                    android:visibility="invisible"
+                    app:layout_constraintTop_toTopOf="@+id/setting_account_pw_current_editText"
+                    app:layout_constraintBottom_toBottomOf="@+id/setting_account_pw_current_editText"
+                    app:layout_constraintEnd_toEndOf="@+id/setting_account_pw_current_editText"/>
+
+                <TextView
+                    android:id="@+id/setting_account_pw_condition_0"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setting_account_pw_notice_0"
+                    android:textSize="13sp"
+                    android:textColor="@color/necessary"
+                    android:gravity="start"
+                    android:visibility="gone"
+                    android:fontFamily="@font/notosans_regular_ttf"
+                    android:singleLine="true"
+                    app:layout_constraintTop_toBottomOf="@+id/setting_account_pw_current_editText"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/new_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/current_layout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:id="@+id/new_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="3dp"
+                    android:text="@string/setting_account_pw_new"
+                    android:textSize="13sp"
+                    android:textColor="@color/text_default_2"
+                    android:fontFamily="@font/notosans_regular_ttf"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <View
+                    android:id="@+id/new_dot"
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/red_dot"
+                    app:layout_constraintStart_toEndOf="@+id/new_textView"
+                    app:layout_constraintTop_toTopOf="@+id/new_textView"/>
+
+                <EditText
+                    android:id="@+id/setting_account_pw_new_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/login_main_edittext"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="50dp"
+                    android:hint="@string/setting_account_pw_new_hint"
+                    android:textColorHint="@color/hint"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/notosans_regular_ttf"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:inputType="textPassword"
+                    android:privateImeOptions="defaultInputmode=english"
+                    android:textCursorDrawable="@drawable/edittext_cursor_black"
+                    android:imeOptions="flagNoExtractUi"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/new_textView"/>
+
+                <Button
+                    android:id="@+id/setting_account_pw_new_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="end"
+                    android:background="@drawable/btn_visible"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="@+id/setting_account_pw_new_editText"
+                    app:layout_constraintTop_toTopOf="@+id/setting_account_pw_new_editText"
+                    app:layout_constraintBottom_toBottomOf="@+id/setting_account_pw_new_editText"/>
+
+                <TextView
+                    android:id="@+id/setting_account_pw_condition_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setting_account_pw_new_hint_notice"
+                    android:textSize="13sp"
+                    android:textColor="@color/necessary"
+                    android:fontFamily="@font/notosans_regular_ttf"
+                    android:gravity="start"
+                    android:visibility="gone"
+                    android:singleLine="true"
+                    app:layout_constraintTop_toBottomOf="@+id/setting_account_pw_new_editText"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/new_confirm_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/new_layout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:id="@+id/new_confirm_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="3dp"
+                    android:text="@string/setting_account_pw_new_confirm"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_default_2"
+                    android:fontFamily="@font/notosans_regular_ttf"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <View
+                    android:id="@+id/new_confirm_dot"
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/red_dot"
+                    app:layout_constraintStart_toEndOf="@+id/new_confirm_textView"
+                    app:layout_constraintTop_toTopOf="@+id/new_confirm_textView"/>
+
+                <EditText
+                    android:id="@+id/setting_account_pw_current_conf_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/login_main_edittext"
+                    android:fontFamily="@font/notosans_regular_ttf"
+                    android:hint="@string/setting_account_pw_new_confirm_hint"
+                    android:includeFontPadding="false"
+                    android:inputType="textPassword"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="50dp"
+                    android:privateImeOptions="defaultInputmode=english"
+                    android:textColorHint="@color/hint"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textCursorDrawable="@drawable/edittext_cursor_black"
+                    android:imeOptions="flagNoExtractUi"
+                    app:layout_constraintTop_toBottomOf="@+id/new_confirm_textView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <Button
+                    android:id="@+id/setting_account_new_pw_confirm_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn_visible"
+                    android:visibility="invisible"
+                    app:layout_constraintTop_toTopOf="@+id/setting_account_pw_current_conf_editText"
+                    app:layout_constraintBottom_toBottomOf="@+id/setting_account_pw_current_conf_editText"
+                    app:layout_constraintEnd_toEndOf="@+id/setting_account_pw_current_conf_editText"/>
+
+                <TextView
+                    android:id="@+id/setting_account_pw_condition_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/join_member_pw_incorrect"
+                    android:textSize="13sp"
+                    android:textColor="@color/necessary"
+                    android:fontFamily="@font/notosans_regular_ttf"
+                    android:gravity="start"
+                    android:visibility="gone"
+                    android:singleLine="true"
+                    app:layout_constraintTop_toBottomOf="@+id/setting_account_pw_current_conf_editText"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/setting_account_pw_next_change_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:includeFontPadding="false"
+            android:background="@drawable/btn_ripple_sub"
+            android:text="@string/setting_account_pw_next"
+            android:fontFamily="@font/notosans_regular_ttf"
+            android:textColor="@color/text_default_2"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/setting_account_pw_change_button"/>
+
+        <Button
+            android:id="@+id/setting_account_pw_change_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:includeFontPadding="false"
+            android:background="@drawable/btn_ripple_main"
+            android:text="@string/setting_account_pw_change"
+            android:fontFamily="@font/notosans_regular_ttf"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/setting_account_pw_next_change_button"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

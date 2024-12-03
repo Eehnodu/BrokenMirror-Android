@@ -1,0 +1,13 @@
+<svg data-name="bottom navigation_icon_chat" xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21">
+    <path data-name="패스 2472" d="M8 0a8 8 0 1 1-8 8 8 8 0 0 1 8-8z" transform="translate(3 3)" style="fill:#e7f3ed"/>
+    <path data-name="사각형 84" style="fill:none" d="M0 0h22v21H0z"/>
+    <g data-name="그룹 31">
+        <path data-name="패스 2467" d="M4.592 16.367a.513.513 0 0 1-.513-.513v-2.565h-1.54A1.541 1.541 0 0 1 1 11.749v-8.21A1.541 1.541 0 0 1 2.539 2h12.315a1.541 1.541 0 0 1 1.539 1.539v8.21a1.541 1.541 0 0 1-1.539 1.539H8.62l-3.707 2.967a.512.512 0 0 1-.321.112zM2.539 3.026a.514.514 0 0 0-.513.513v8.21a.514.514 0 0 0 .513.513h2.053a.513.513 0 0 1 .513.513v2.011l3.015-2.411a.513.513 0 0 1 .321-.112h6.414a.514.514 0 0 0 .513-.513V3.539a.514.514 0 0 0-.513-.513z" transform="translate(2.303 1.633)" style="fill:#172760"/>
+    </g>
+    <g data-name="그룹 32">
+        <path data-name="패스 2468" d="M15.723 11.026h-8.21a.513.513 0 1 1 0-1.026h8.21a.513.513 0 1 1 0 1.026z" transform="translate(-.618 -2.262)" style="fill:#172760"/>
+    </g>
+    <g data-name="그룹 33">
+        <path data-name="패스 2469" d="M11.618 15.026h-4.1a.513.513 0 1 1 0-1.026h4.1a.513.513 0 0 1 0 1.026z" transform="translate(-.618 -4.21)" style="fill:#172760"/>
+    </g>
+</svg>
